@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type"    content="text/html;charset=UTF-8">
+            <style>
+                .test{
+                    text-align: center;
+                    margin: 0 auto;
+                }
+                .testBtn{
+                    width: 200px;
+                    height: 40px;
+                    text-align: center;
+                    margin: 0 auto;
+                }
+                .testBtn button{
+                    width: 200px;
+                    height: 40px;
+                    text-align: center;
+                }
+            </style>
+            
+            <script type="text/javascript">
+                var share = JSON.stringify({"title": "Migi000",
+                                           "desc": "简书",
+                                           "viewAlpha":"0",
+                                           "shareUrl": "http://www.jianshu.com/p/f896d73c670a"
+                                           });
+                                           
+               //IOS
+               function startFunction(share){
+            
+                   window.android.startFunction(share)//android
+               };
+
+                var x = document.getElementById("myDIV");
+                if (x.classList.contains("mystyle")) {
+                    x.classList.remove("anotherClass");
+                } else {
+                    alert("Could not find it.");
+                }
+            </script>
+            
+            
+        <script type="text/javascript">
+            function clear() {
+                document.getElementByClass('btn').innerHTML = 'dfadfsd';
+            }
+            clear();
+        </script>
+    </head>
+    
+    
+    <body>
+        <br/>
+        <div class="test">
+            <h3 class="btn">Objective-C和JavaScript交互的那些事</h3>
+        </div>
+        <br/>
+        <div class="testBtn">
+            <input  type="button"  value="js调用OC的第一种方法：block"  onClick="startFunction(share)" >
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
