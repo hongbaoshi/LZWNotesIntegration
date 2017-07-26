@@ -9,7 +9,7 @@
 #import "FiveWKWebViewInteraction.h"
 #import <WebKit/WebKit.h>
 
-@interface FiveWKWebViewInteraction ()<WKScriptMessageHandler>
+@interface FiveWKWebViewInteraction ()<WKScriptMessageHandler,WKUIDelegate>
 
 @property (nonatomic, strong) WKWebView *wkWebView;
 
@@ -17,7 +17,9 @@
 
 @implementation FiveWKWebViewInteraction
 
-- (void)viewDidLoad {
+#pragma mark --- 1、加载WKWebView
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
     //*** 1、加载网页
@@ -25,6 +27,7 @@
     config.preferences.minimumFontSize = 18;
     
     self.wkWebView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height/2) configuration:config];
+    self.wkWebView.UIDelegate = self;
     [self.view addSubview:self.wkWebView];
     
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"wkIndex" ofType:@"html"];
@@ -40,8 +43,11 @@
     [userCC addScriptMessageHandler:self name:@"showSendMsg"];
     
 }
+
+#pragma mark --- 2、OC调用HTML页面，修改页面显示内容
 //网页加载完成之后调用JS代码才会执行，因为这个时候html页面已经注入到webView中并且可以响应到对应方法
 - (IBAction)btnClick:(UIButton *)sender {
+    
     if (!self.wkWebView.loading) {
         
     
@@ -71,7 +77,7 @@
 }
 
 
-#pragma mark - WKScriptMessageHandler
+#pragma mark --- 3、WKScriptMessageHandler  JS调用OC的回调方法
 
 - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message {
     NSLog(@"%@",NSStringFromSelector(_cmd));
@@ -105,6 +111,26 @@
 }
 
 
+
+
+#pragma mark --- 4、WKUIDelegate 显示html页面警告窗口
+- (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler
+{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:message
+                                                                             message:nil
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"OK"
+                                                        style:UIAlertActionStyleCancel
+                                                      handler:^(UIAlertAction *action) {
+                                                          completionHandler();
+                                                      }]];
+    [self presentViewController:alertController animated:YES completion:^{}];
+}
+
+- (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL result))completionHandler
+{
+    completionHandler(YES);
+}
 
 
 

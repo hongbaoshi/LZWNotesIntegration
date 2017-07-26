@@ -47,17 +47,17 @@
 {
     //1、调用提示框
     //要将script的alert()方法转化为string类型
-    NSString *alertJs=@"alert('Hello Word')";
+    NSString *alertJs=@"alert('OC调用webview的弹出展示窗口')";
     [_jsContext evaluateScript:alertJs];
     
-    //2、自己添加方法，自己调用
-    [_jsContext evaluateScript:@"function add(a, b) { return a + b; }"];
-    // 根据下标取出方法
-    JSValue *add = _jsContext[@"add"];
-    NSLog(@"Func: %@", add);
-    // 传入参数 调用取到的方法
-    JSValue *sum = [add callWithArguments:@[@(7), @(21)]];
-    NSLog(@"Sum: %d",[sum toInt32]);
+////    2、自己添加方法，自己调用
+//    [_jsContext evaluateScript:@"function add(a, b) { return a + b; }"];
+//    // 根据下标取出方法
+//    JSValue *add = _jsContext[@"add"];
+//    NSLog(@"Func: %@", add);
+//    // 传入参数 调用取到的方法
+//    JSValue *sum = [add callWithArguments:@[@(7), @(21)]];
+//    NSLog(@"Sum: %d",[sum toInt32]);
     
     
     //3、OC调用js的异常输出
