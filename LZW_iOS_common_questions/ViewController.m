@@ -34,8 +34,8 @@
                                                       @[@"07---KVO简单使用",@"SevenViewController"],
                                                       @[@"08---自己封装的类",@"EightViewController"],
                                                       @[@"09---富文本的简单实用",@"NineViewController"],
-                                                      @[@"10---",@""],
-                                                      @[@"11---",@""],
+                                                      @[@"10---UIImageView详解",@"TenViewController"],
+                                                      @[@"11---iOS简单动画(位移、旋转、缩放、弹簧)",@"ElevenViewController"],
                                                       @[@"12---",@""]
                                                       ]];
     

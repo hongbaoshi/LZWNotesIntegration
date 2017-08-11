@@ -47,7 +47,7 @@
     // 表情图片
     attch.image = [UIImage imageNamed:@"sina"];
     // 设置图片大小
-    attch.bounds = CGRectMake(0, 0, 30, 30);
+    attch.bounds = CGRectMake(0, 0, 20, 20);
     
     // 创建带有图片的富文本
     NSAttributedString *string = [NSAttributedString attributedStringWithAttachment:attch];

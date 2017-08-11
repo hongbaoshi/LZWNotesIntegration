@@ -52,7 +52,7 @@
         };
     }else if(btn.tag == 181)
     {
-        NSArray *imgArr = @[@"4.jpg",@"5.jpg",@"6.jpg",@"7.jpg"];
+        NSArray *imgArr = @[@"https://nie.res.netease.com/r/pic/20170802/6d756c7a-1d98-4695-a11d-b7cd41d39e88"];
         LZWHeaderScrollView *headerScrollView = [[LZWHeaderScrollView alloc] initWithFrame:CGRectMake(30, 200, SCW-60, 200) andWithImgArray:imgArr andWithScrTime:4.0 andWithStartTag:100];
         headerScrollView.block = ^(NSInteger tag){
             NSLog(@"%ld",tag);

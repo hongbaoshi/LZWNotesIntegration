@@ -81,7 +81,8 @@
         UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(_scrWidth*i, 0, _scrWidth, _scrHeight)];
         imgView.userInteractionEnabled = YES;
         imgView.tag = _startTag +i -1;
-        imgView.image = [UIImage imageNamed:imgArray[i]];
+//        imgView.image = [UIImage imageNamed:imgArray[i]];
+        imgView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:imgArray[i]]]];
         imgView.contentMode = UIViewContentModeScaleAspectFit;
         
         //创建图片单击手势

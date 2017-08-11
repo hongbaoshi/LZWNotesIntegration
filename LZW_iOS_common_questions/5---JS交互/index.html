@@ -7,17 +7,17 @@
                     text-align: center;
                     margin: 0 auto;
                 }
-                .testBtn{
-                    width: 200px;
-                    height: 40px;
-                    text-align: center;
-                    margin: 0 auto;
-                }
-                .testBtn button{
-                    width: 200px;
-                    height: 40px;
-                    text-align: center;
-                }
+            .testBtn{
+                width: 200px;
+                height: 40px;
+                text-align: center;
+                margin: 0 auto;
+            }
+            .testBtn button{
+                width: 200px;
+                height: 40px;
+                text-align: center;
+            }
             </style>
             
             <script type="text/javascript">
@@ -27,27 +27,31 @@
                                            "shareUrl": "http://www.jianshu.com/p/f896d73c670a"
                                            });
                                            
-               //IOS
-               function startFunction(share){
+                                           //IOS
+                                           
+                                           (function () {
+                                            startFunction('12345');
+                                            })();
+                                            function startFunction(text){
+                                                alert(text);
+                                                //            window.android.startFunction(text);//android
+                                            }
             
-                   window.android.startFunction(share)//android
-               };
-
-                var x = document.getElementById("myDIV");
-                if (x.classList.contains("mystyle")) {
-                    x.classList.remove("anotherClass");
-                } else {
-                    alert("Could not find it.");
-                }
+            var x = document.getElementById("myDIV");
+            if (x.classList.contains("mystyle")) {
+                x.classList.remove("anotherClass");
+            } else {
+                alert("Could not find it.");
+            }
             </script>
             
             
-        <script type="text/javascript">
-            function clear() {
-                document.getElementByClass('btn').innerHTML = 'dfadfsd';
-            }
+            <script type="text/javascript">
+                function clear() {
+                    document.getElementByClass('btn').innerHTML = 'dfadfsd';
+                }
             clear();
-        </script>
+                </script>
     </head>
     
     
@@ -58,7 +62,7 @@
         </div>
         <br/>
         <div class="testBtn">
-            <input  type="button"  value="js调用OC的第一种方法：block"  onClick="startFunction(share)" >
+            <input  type="button"  value="js调用OC的第一种方法：block"  onClick="startFunction('1234')" >
         </div>
     </body>
 </html>
