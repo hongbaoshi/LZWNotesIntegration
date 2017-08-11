@@ -60,6 +60,10 @@
 		F490CA1E1F3D595300446EB9 /* 23.png in Resources */ = {isa = PBXBuildFile; fileRef = F490CA051F3D595300446EB9 /* 23.png */; };
 		F490CA1F1F3D595300446EB9 /* 24.png in Resources */ = {isa = PBXBuildFile; fileRef = F490CA061F3D595300446EB9 /* 24.png */; };
 		F490CA201F3D595300446EB9 /* 25.png in Resources */ = {isa = PBXBuildFile; fileRef = F490CA071F3D595300446EB9 /* 25.png */; };
+		F490CA241F3D609B00446EB9 /* TheoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F490CA231F3D609B00446EB9 /* TheoryViewController.m */; };
+		F490CA2A1F3D60ED00446EB9 /* RotateAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F490CA291F3D60ED00446EB9 /* RotateAnimationViewController.m */; };
+		F490CA301F3D610A00446EB9 /* SpringAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F490CA2F1F3D610A00446EB9 /* SpringAnimationViewController.m */; };
+		F490CA331F3D845C00446EB9 /* ChangePropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F490CA321F3D845C00446EB9 /* ChangePropertyViewController.m */; };
 		F4B80A191F0651B600848847 /* TwoPublicMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B80A181F0651B600848847 /* TwoPublicMethod.m */; };
 		F4B80A1D1F073F4E00848847 /* TwoPublicInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B80A1C1F073F4E00848847 /* TwoPublicInfo.m */; };
 		F4B80A201F073FFF00848847 /* BNDReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B80A1F1F073FFF00848847 /* BNDReachability.m */; };
@@ -163,6 +167,14 @@
 		F490CA051F3D595300446EB9 /* 23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 23.png; sourceTree = "<group>"; };
 		F490CA061F3D595300446EB9 /* 24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 24.png; sourceTree = "<group>"; };
 		F490CA071F3D595300446EB9 /* 25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 25.png; sourceTree = "<group>"; };
+		F490CA221F3D609B00446EB9 /* TheoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheoryViewController.h; sourceTree = "<group>"; };
+		F490CA231F3D609B00446EB9 /* TheoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheoryViewController.m; sourceTree = "<group>"; };
+		F490CA281F3D60ED00446EB9 /* RotateAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateAnimationViewController.h; sourceTree = "<group>"; };
+		F490CA291F3D60ED00446EB9 /* RotateAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotateAnimationViewController.m; sourceTree = "<group>"; };
+		F490CA2E1F3D610A00446EB9 /* SpringAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpringAnimationViewController.h; sourceTree = "<group>"; };
+		F490CA2F1F3D610A00446EB9 /* SpringAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpringAnimationViewController.m; sourceTree = "<group>"; };
+		F490CA311F3D845C00446EB9 /* ChangePropertyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePropertyViewController.h; sourceTree = "<group>"; };
+		F490CA321F3D845C00446EB9 /* ChangePropertyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePropertyViewController.m; sourceTree = "<group>"; };
 		F4B80A171F0651B600848847 /* TwoPublicMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoPublicMethod.h; sourceTree = "<group>"; };
 		F4B80A181F0651B600848847 /* TwoPublicMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoPublicMethod.m; sourceTree = "<group>"; };
 		F4B80A1A1F0651D300848847 /* LZWSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZWSingleton.h; sourceTree = "<group>"; };
@@ -346,6 +358,7 @@
 			children = (
 				F490C94D1F3D534700446EB9 /* ElevenViewController.h */,
 				F490C94E1F3D534700446EB9 /* ElevenViewController.m */,
+				F490CA211F3D605100446EB9 /* eleven--- */,
 			);
 			path = "11---iOS简单动画(位移、旋转、缩放、弹簧)";
 			sourceTree = "<group>";
@@ -380,6 +393,21 @@
 				F490CA071F3D595300446EB9 /* 25.png */,
 			);
 			name = tenImages;
+			sourceTree = "<group>";
+		};
+		F490CA211F3D605100446EB9 /* eleven--- */ = {
+			isa = PBXGroup;
+			children = (
+				F490CA221F3D609B00446EB9 /* TheoryViewController.h */,
+				F490CA231F3D609B00446EB9 /* TheoryViewController.m */,
+				F490CA311F3D845C00446EB9 /* ChangePropertyViewController.h */,
+				F490CA321F3D845C00446EB9 /* ChangePropertyViewController.m */,
+				F490CA281F3D60ED00446EB9 /* RotateAnimationViewController.h */,
+				F490CA291F3D60ED00446EB9 /* RotateAnimationViewController.m */,
+				F490CA2E1F3D610A00446EB9 /* SpringAnimationViewController.h */,
+				F490CA2F1F3D610A00446EB9 /* SpringAnimationViewController.m */,
+			);
+			name = "eleven---";
 			sourceTree = "<group>";
 		};
 		F4B80A161F0651B600848847 /* 2---公用类 */ = {
@@ -683,6 +711,8 @@
 				F47530491F0F686000B9B30F /* LZWHeaderScrollView.m in Sources */,
 				F41889301F05F59400225267 /* LZWBaseViewController.m in Sources */,
 				F429B0431F0E2C0E00E36833 /* MyModel.m in Sources */,
+				F490CA301F3D610A00446EB9 /* SpringAnimationViewController.m in Sources */,
+				F490CA241F3D609B00446EB9 /* TheoryViewController.m in Sources */,
 				F4DE29251F050016003C53C7 /* AppDelegate.m in Sources */,
 				F45EFF041F15D6B2007EE645 /* NineViewController.m in Sources */,
 				F429B0301F0E19B400E36833 /* SixViewController.m in Sources */,
@@ -697,6 +727,8 @@
 				F475303B1F0F652900B9B30F /* LZWFloatWindow.m in Sources */,
 				F47530571F0F720800B9B30F /* LzwScrollView.m in Sources */,
 				F4B80A1D1F073F4E00848847 /* TwoPublicInfo.m in Sources */,
+				F490CA331F3D845C00446EB9 /* ChangePropertyViewController.m in Sources */,
+				F490CA2A1F3D60ED00446EB9 /* RotateAnimationViewController.m in Sources */,
 				F429B0401F0E2B5200E36833 /* SevenViewController.m in Sources */,
 				F4D70A4C1F0A4A130084F7E4 /* FiveWKWebViewInteraction.m in Sources */,
 				F4B80A231F07406900848847 /* KeyChainWrapper.m in Sources */,
