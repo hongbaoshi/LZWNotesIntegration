@@ -24,19 +24,8 @@
     
     self.title = @"iOS复习笔记";
     _titleDataArray = [NSMutableArray arrayWithArray:@[
-                                                      @[@"00---状态栏操作",@"ZeroViewController"],
-                                                      @[@"01---导航栏操作",@"OneViewController"],
-                                                      @[@"02---公用方法(见:公用类文件夹)",@""],
-                                                      @[@"03---代码截屏",@"ThreeViewController"],
-                                                      @[@"04---多线程",@"FourViewController"],
-                                                      @[@"05---JS交互",@"FiveViewController"],
-                                                      @[@"06---旋转罗盘",@"SixViewController"],
-                                                      @[@"07---KVO简单使用",@"SevenViewController"],
-                                                      @[@"08---自己封装的类",@"EightViewController"],
-                                                      @[@"09---富文本的简单实用",@"NineViewController"],
-                                                      @[@"10---UIImageView详解",@"TenViewController"],
-                                                      @[@"11---iOS简单动画(位移、旋转、缩放、弹簧)",@"ElevenViewController"],
-                                                      @[@"12---",@""]
+                                                      @[@"00---李志伟",@"LZWTableViewController"],
+                                                      @[@"01---饶思学",@""]
                                                       ]];
     
     
