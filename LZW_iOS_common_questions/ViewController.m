@@ -25,8 +25,9 @@
     
     self.title = @"iOS复习笔记";
     _titleDataArray = [NSMutableArray arrayWithArray:@[
-                                                      @[@"00---李志伟",@"LZWTableViewController"],
-                                                      @[@"01---饶思学",@""]
+                                                      @[@"00---红宝时",@"LZWTableViewController"],
+                                                      @[@"01---饶皮皮",@""],
+                                                      @[@"02---顾泠轩",@""]
                                                       ]];
     
     NSLog(@"伟神流弊  伟神威武 伟神带我飞");
