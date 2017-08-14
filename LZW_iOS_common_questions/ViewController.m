@@ -22,13 +22,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
     self.title = @"iOS复习笔记";
     _titleDataArray = [NSMutableArray arrayWithArray:@[
                                                       @[@"00---李志伟",@"LZWTableViewController"],
                                                       @[@"01---饶思学",@""]
                                                       ]];
     
-    
+    NSLog(@"伟神流弊  伟神威武 伟神带我飞");
     
     //*** 1、添加lzwTestTableView
     _lzwTestTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
