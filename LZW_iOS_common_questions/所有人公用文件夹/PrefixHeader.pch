@@ -13,9 +13,8 @@
 #endif /* PrefixHeader_pch */
 
 
-
-
-
+#import "LZWSingleton.h"  //宏定义单例
+#import "AllPublicMethod.h"
 
 
 

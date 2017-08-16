@@ -1,26 +1,32 @@
 //
-//  LZWTableViewController.m
+//  LZWHomeViewController.m
 //  LZW_iOS_common_questions
 //
 //  Created by 红宝时 on 2017/8/14.
 //  Copyright © 2017年 红宝时. All rights reserved.
 //
 
-#import "LZWTableViewController.h"
+#import "LZWHomeViewController.h"
+#import <CoreMotion/CoreMotion.h>
 
-@interface LZWTableViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface LZWHomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property(nonatomic,strong)UITableView *lzwTestTableView;
 
 @property(nonatomic,strong)NSMutableArray *titleDataArray;
+
+
+@property(nonatomic,strong)CMMotionManager *motionManager;//添加重力感应器
+@property(assign, nonatomic) NSTimeInterval gyroUpdateInterval;
+@property(nonatomic,assign)double accZ; //z轴方向的偏移量；
+
 @end
 
-@implementation LZWTableViewController
+@implementation LZWHomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"iOS复习笔记";
     _titleDataArray = [NSMutableArray arrayWithArray:@[
                                                        @[@"00---状态栏操作",@"ZeroViewController"],
                                                        @[@"01---导航栏操作",@"OneViewController"],
@@ -46,15 +52,47 @@
                                                        ]];
     
     
-    
     //*** 1、添加lzwTestTableView
     _lzwTestTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     _lzwTestTableView.delegate = self;
     _lzwTestTableView.dataSource = self;
     [self.view addSubview:_lzwTestTableView];
     
+    //*** 2、添加重力感应器，用于返回首次进入页面
+    [self accelerotionDataMethod];
+}
+
+
+#pragma mark --- 1、设置重力感应器：用于返回进入的首页
+-(void)accelerotionDataMethod
+{
+    self.motionManager = [[CMMotionManager alloc] init];
+    self.gyroUpdateInterval = 0.2;
+    self.motionManager.accelerometerUpdateInterval = self.gyroUpdateInterval;
+    __weak LZWHomeViewController *weakself = self;
+    [self.motionManager startAccelerometerUpdatesToQueue:[NSOperationQueue currentQueue]
+                                             withHandler:^(CMAccelerometerData  *accelerometerData, NSError *error) {
+                                                 [weakself outputAccelertionData:accelerometerData.acceleration];
+                                                 if(error){
+                                                     NSLog(@"%@", error);
+                                                 }
+                                             }];
+    [self.motionManager startGyroUpdates];
+}
+
+-(void)outputAccelertionData:(CMAcceleration)acceleration
+{
+    self.accZ = acceleration.z;
+    
+    if (self.accZ >= 0.2)
+    {
+        [self.motionManager stopAccelerometerUpdates];
+        
+        [[AllPublicMethod sharedAllPublicMethod] backToFirstView];
+    }
     
 }
+
 
 
 #pragma mark --- UITableViewDelegate,UITableViewDataSource

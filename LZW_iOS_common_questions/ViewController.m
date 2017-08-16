@@ -7,8 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "TwoPublicInfo.h"
-#import "RaopipiViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -26,7 +24,7 @@
 
     self.title = @"iOS复习笔记";
     _titleDataArray = [NSMutableArray arrayWithArray:@[
-                                                      @[@"00---红宝时",@"LZWTableViewController"],
+                                                      @[@"00---红宝时",@"HongbaoshiViewController"],
                                                       @[@"01---饶皮皮",@"RaopipiViewController"],
                                                       @[@"02---顾泠轩",@""]
                                                       ]];

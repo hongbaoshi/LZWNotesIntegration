@@ -100,12 +100,14 @@
 		F48819E51F444D2400C15F3D /* EightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F488198D1F444D2400C15F3D /* EightViewController.m */; };
 		F48819E61F444D2400C15F3D /* NineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48819901F444D2400C15F3D /* NineViewController.m */; };
 		F48819E71F444D2400C15F3D /* sina.png in Resources */ = {isa = PBXBuildFile; fileRef = F48819911F444D2400C15F3D /* sina.png */; };
-		F48819E81F444D2400C15F3D /* LZWTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48819931F444D2400C15F3D /* LZWTableViewController.m */; };
+		F48819E81F444D2400C15F3D /* LZWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48819931F444D2400C15F3D /* LZWHomeViewController.m */; };
 		F48819EC1F444D9300C15F3D /* HongbaoshiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48819EB1F444D9300C15F3D /* HongbaoshiViewController.m */; };
 		F48819EF1F444E0C00C15F3D /* LZWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48819EE1F444E0C00C15F3D /* LZWNavigationController.m */; };
 		F48819F21F444E1D00C15F3D /* LZWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48819F11F444E1D00C15F3D /* LZWTabBarController.m */; };
 		F490CA3B1F3D98E200446EB9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F490CA391F3D98E200446EB9 /* AVFoundation.framework */; };
 		F490CA3C1F3D98E200446EB9 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F490CA3A1F3D98E200446EB9 /* AVKit.framework */; };
+		F4D04D961F44627F00BC293F /* LZWPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D04D951F44627F00BC293F /* LZWPersonViewController.m */; };
+		F4D04D991F44654B00BC293F /* AllPublicMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D04D981F44654B00BC293F /* AllPublicMethod.m */; };
 		F4DE29221F050016003C53C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DE29211F050016003C53C7 /* main.m */; };
 		F4DE29251F050016003C53C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DE29241F050016003C53C7 /* AppDelegate.m */; };
 		F4DE29281F050016003C53C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DE29271F050016003C53C7 /* ViewController.m */; };
@@ -268,8 +270,8 @@
 		F488198F1F444D2400C15F3D /* NineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NineViewController.h; sourceTree = "<group>"; };
 		F48819901F444D2400C15F3D /* NineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NineViewController.m; sourceTree = "<group>"; };
 		F48819911F444D2400C15F3D /* sina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sina.png; sourceTree = "<group>"; };
-		F48819921F444D2400C15F3D /* LZWTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZWTableViewController.h; sourceTree = "<group>"; };
-		F48819931F444D2400C15F3D /* LZWTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZWTableViewController.m; sourceTree = "<group>"; };
+		F48819921F444D2400C15F3D /* LZWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZWHomeViewController.h; sourceTree = "<group>"; };
+		F48819931F444D2400C15F3D /* LZWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZWHomeViewController.m; sourceTree = "<group>"; };
 		F48819E91F444D4700C15F3D /* LZWHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZWHeader.h; sourceTree = "<group>"; };
 		F48819EA1F444D9300C15F3D /* HongbaoshiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HongbaoshiViewController.h; sourceTree = "<group>"; };
 		F48819EB1F444D9300C15F3D /* HongbaoshiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HongbaoshiViewController.m; sourceTree = "<group>"; };
@@ -279,6 +281,10 @@
 		F48819F11F444E1D00C15F3D /* LZWTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZWTabBarController.m; sourceTree = "<group>"; };
 		F490CA391F3D98E200446EB9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F490CA3A1F3D98E200446EB9 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		F4D04D941F44627F00BC293F /* LZWPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZWPersonViewController.h; sourceTree = "<group>"; };
+		F4D04D951F44627F00BC293F /* LZWPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZWPersonViewController.m; sourceTree = "<group>"; };
+		F4D04D971F44654B00BC293F /* AllPublicMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllPublicMethod.h; sourceTree = "<group>"; };
+		F4D04D981F44654B00BC293F /* AllPublicMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllPublicMethod.m; sourceTree = "<group>"; };
 		F4DE291D1F050016003C53C7 /* LZW_iOS_common_questions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZW_iOS_common_questions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DE29211F050016003C53C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4DE29231F050016003C53C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -428,6 +434,8 @@
 			isa = PBXGroup;
 			children = (
 				F48816501F442C7400C15F3D /* PrefixHeader.pch */,
+				F4D04D971F44654B00BC293F /* AllPublicMethod.h */,
+				F4D04D981F44654B00BC293F /* AllPublicMethod.m */,
 			);
 			path = "所有人公用文件夹";
 			sourceTree = "<group>";
@@ -481,8 +489,8 @@
 		F488190C1F444D2400C15F3D /* 1--Home */ = {
 			isa = PBXGroup;
 			children = (
-				F48819921F444D2400C15F3D /* LZWTableViewController.h */,
-				F48819931F444D2400C15F3D /* LZWTableViewController.m */,
+				F48819921F444D2400C15F3D /* LZWHomeViewController.h */,
+				F48819931F444D2400C15F3D /* LZWHomeViewController.m */,
 				F488190D1F444D2400C15F3D /* 0---状态栏 */,
 				F48819101F444D2400C15F3D /* 1---导航栏 */,
 				F48819131F444D2400C15F3D /* 10---UIImageView详解 */,
@@ -742,6 +750,8 @@
 		F48819941F444D2400C15F3D /* 2--Person */ = {
 			isa = PBXGroup;
 			children = (
+				F4D04D941F44627F00BC293F /* LZWPersonViewController.h */,
+				F4D04D951F44627F00BC293F /* LZWPersonViewController.m */,
 			);
 			path = "2--Person";
 			sourceTree = "<group>";
@@ -1070,6 +1080,7 @@
 				F48819C51F444D2400C15F3D /* TwoPublicMethod.m in Sources */,
 				F48819D51F444D2400C15F3D /* TestKvoViewController.m in Sources */,
 				F48819C21F444D2400C15F3D /* BNDReachability.m in Sources */,
+				F4D04D961F44627F00BC293F /* LZWPersonViewController.m in Sources */,
 				F48819D31F444D2400C15F3D /* MyModel.m in Sources */,
 				F48819B81F444D2400C15F3D /* SpringAnimationViewController.m in Sources */,
 				F48819BF1F444D2400C15F3D /* TwelveMPPlayerViewController.m in Sources */,
@@ -1090,7 +1101,7 @@
 				F48819C61F444D2400C15F3D /* ThreeViewController.m in Sources */,
 				ABF379821F44315400336725 /* PPBaseNavigationViewController.m in Sources */,
 				ABF379CA1F4443A400336725 /* UIImage+Category.m in Sources */,
-				F48819E81F444D2400C15F3D /* LZWTableViewController.m in Sources */,
+				F48819E81F444D2400C15F3D /* LZWHomeViewController.m in Sources */,
 				F4DE29251F050016003C53C7 /* AppDelegate.m in Sources */,
 				ABF379981F44355500336725 /* PPMineController.m in Sources */,
 				F48819C41F444D2400C15F3D /* TwoPublicInfo.m in Sources */,
@@ -1117,6 +1128,7 @@
 				F48819C71F444D2400C15F3D /* FourGCDTableViewShow.m in Sources */,
 				F48819E31F444D2400C15F3D /* LZWHeaderScrollView.m in Sources */,
 				F48819CA1F444D2400C15F3D /* MyViewController.m in Sources */,
+				F4D04D991F44654B00BC293F /* AllPublicMethod.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

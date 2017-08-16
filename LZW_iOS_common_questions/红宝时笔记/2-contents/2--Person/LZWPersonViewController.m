@@ -1,30 +1,22 @@
 //
-//  PPHomeController.m
+//  LZWPersonViewController.m
 //  LZW_iOS_common_questions
 //
-//  Created by 饶思学 on 2017/8/16.
+//  Created by 红宝时 on 2017/8/16.
 //  Copyright © 2017年 红宝时. All rights reserved.
 //
 
-#import "PPHomeController.h"
-#import "ViewController.h"
-@interface PPHomeController ()
+#import "LZWPersonViewController.h"
+
+@interface LZWPersonViewController ()
 
 @end
 
-@implementation PPHomeController
+@implementation LZWPersonViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self addNavigationItemWithTitles:@[@"到上面去"] isLeft:YES target:self action:@selector(back) tags:nil];
     // Do any additional setup after loading the view.
-}
--(void)back{
-    
-//    UINavigationController * naVC=[[UINavigationController alloc]initWithRootViewController:[ViewController new]];
-//    [UIApplication sharedApplication].delegate.window.rootViewController=naVC;
-    
-    [[AllPublicMethod sharedAllPublicMethod] backToFirstView];
 }
 
 - (void)didReceiveMemoryWarning {

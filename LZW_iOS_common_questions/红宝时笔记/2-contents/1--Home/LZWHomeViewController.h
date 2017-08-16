@@ -1,5 +1,5 @@
 //
-//  LZWTableViewController.h
+//  LZWHomeViewController.h
 //  LZW_iOS_common_questions
 //
 //  Created by 红宝时 on 2017/8/14.
@@ -8,6 +8,6 @@
 
 #import "LZWBaseViewController.h"
 
-@interface LZWTableViewController : LZWBaseViewController
+@interface LZWHomeViewController : LZWBaseViewController
 
 @end
