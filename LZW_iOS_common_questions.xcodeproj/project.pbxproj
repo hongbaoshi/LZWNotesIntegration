@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B353985DC79B65FF2DF24C5B /* libPods-LZW_iOS_common_questions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8370B6834D8C52C24F9732FD /* libPods-LZW_iOS_common_questions.a */; };
+		F488164E1F44276100C15F3D /* TwelveStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F488164D1F44276100C15F3D /* TwelveStudyViewController.m */; };
 		F490CA3B1F3D98E200446EB9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F490CA391F3D98E200446EB9 /* AVFoundation.framework */; };
 		F490CA3C1F3D98E200446EB9 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F490CA3A1F3D98E200446EB9 /* AVKit.framework */; };
 		F4A7AF101F41A6CE0022D5F9 /* ZeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A7AE8A1F41A6CE0022D5F9 /* ZeroViewController.m */; };
@@ -111,6 +113,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		47EEF7FC411C4BB76762DDEA /* Pods-LZW_iOS_common_questions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZW_iOS_common_questions.release.xcconfig"; path = "Pods/Target Support Files/Pods-LZW_iOS_common_questions/Pods-LZW_iOS_common_questions.release.xcconfig"; sourceTree = "<group>"; };
+		8370B6834D8C52C24F9732FD /* libPods-LZW_iOS_common_questions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LZW_iOS_common_questions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E6387664DE993B60D54851E /* Pods-LZW_iOS_common_questions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZW_iOS_common_questions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LZW_iOS_common_questions/Pods-LZW_iOS_common_questions.debug.xcconfig"; sourceTree = "<group>"; };
+		F488164C1F44276100C15F3D /* TwelveStudyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwelveStudyViewController.h; sourceTree = "<group>"; };
+		F488164D1F44276100C15F3D /* TwelveStudyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwelveStudyViewController.m; sourceTree = "<group>"; };
+		F48816501F442C7400C15F3D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F490CA391F3D98E200446EB9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F490CA3A1F3D98E200446EB9 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		F4A7AE891F41A6CE0022D5F9 /* ZeroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeroViewController.h; sourceTree = "<group>"; };
@@ -253,6 +261,7 @@
 			files = (
 				F490CA3B1F3D98E200446EB9 /* AVFoundation.framework in Frameworks */,
 				F490CA3C1F3D98E200446EB9 /* AVKit.framework in Frameworks */,
+				B353985DC79B65FF2DF24C5B /* libPods-LZW_iOS_common_questions.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,11 +275,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E27D6AD72042CC39D8EB7D6D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E6387664DE993B60D54851E /* Pods-LZW_iOS_common_questions.debug.xcconfig */,
+				47EEF7FC411C4BB76762DDEA /* Pods-LZW_iOS_common_questions.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F488164F1F442C5E00C15F3D /* 所有人公用文件夹 */ = {
+			isa = PBXGroup;
+			children = (
+				F48816501F442C7400C15F3D /* PrefixHeader.pch */,
+			);
+			path = "所有人公用文件夹";
+			sourceTree = "<group>";
+		};
 		F490CA381F3D98E100446EB9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				F490CA391F3D98E200446EB9 /* AVFoundation.framework */,
 				F490CA3A1F3D98E200446EB9 /* AVKit.framework */,
+				8370B6834D8C52C24F9732FD /* libPods-LZW_iOS_common_questions.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -285,11 +312,12 @@
 		F4A7AE871F41A6CE0022D5F9 /* 红宝时笔记 */ = {
 			isa = PBXGroup;
 			children = (
+				F4A7AF0B1F41A6CE0022D5F9 /* LZWBaseViewController.h */,
+				F4A7AF0C1F41A6CE0022D5F9 /* LZWBaseViewController.m */,
+				F4A7AF0D1F41A6CE0022D5F9 /* LZWTableViewController.h */,
+				F4A7AF0E1F41A6CE0022D5F9 /* LZWTableViewController.m */,
 				F4A7AE881F41A6CE0022D5F9 /* 0---状态栏 */,
 				F4A7AE8B1F41A6CE0022D5F9 /* 1---导航栏 */,
-				F4A7AE8E1F41A6CE0022D5F9 /* 10---UIImageView详解 */,
-				F4A7AEAC1F41A6CE0022D5F9 /* 11---iOS简单动画(位移、旋转、缩放、弹簧) */,
-				F4A7AEB71F41A6CE0022D5F9 /* 12---framework封装视频 */,
 				F4A7AEC21F41A6CE0022D5F9 /* 2---公用类 */,
 				F4A7AECC1F41A6CE0022D5F9 /* 3---代码截屏 */,
 				F4A7AECF1F41A6CE0022D5F9 /* 4---多线程 */,
@@ -298,10 +326,9 @@
 				F4A7AEE71F41A6CE0022D5F9 /* 7---KVO简单使用 */,
 				F4A7AEEE1F41A6CE0022D5F9 /* 8---自己封装的类 */,
 				F4A7AF071F41A6CE0022D5F9 /* 9---富文本的简单使用 */,
-				F4A7AF0B1F41A6CE0022D5F9 /* LZWBaseViewController.h */,
-				F4A7AF0C1F41A6CE0022D5F9 /* LZWBaseViewController.m */,
-				F4A7AF0D1F41A6CE0022D5F9 /* LZWTableViewController.h */,
-				F4A7AF0E1F41A6CE0022D5F9 /* LZWTableViewController.m */,
+				F4A7AE8E1F41A6CE0022D5F9 /* 10---UIImageView详解 */,
+				F4A7AEAC1F41A6CE0022D5F9 /* 11---iOS简单动画(位移、旋转、缩放、弹簧) */,
+				F4A7AEB71F41A6CE0022D5F9 /* 12---framework封装视频 */,
 			);
 			path = "红宝时笔记";
 			sourceTree = "<group>";
@@ -384,12 +411,14 @@
 				F4A7AEB91F41A6CE0022D5F9 /* 2222.mp4 */,
 				F4A7AEBA1F41A6CE0022D5F9 /* 3333.mp4 */,
 				F4A7AEBB1F41A6CE0022D5F9 /* 4444.mp4 */,
-				F4A7AEBC1F41A6CE0022D5F9 /* TwelveAVPlayerViewController.h */,
-				F4A7AEBD1F41A6CE0022D5F9 /* TwelveAVPlayerViewController.m */,
-				F4A7AEBE1F41A6CE0022D5F9 /* TwelveMPPlayerViewController.h */,
-				F4A7AEBF1F41A6CE0022D5F9 /* TwelveMPPlayerViewController.m */,
 				F4A7AEC01F41A6CE0022D5F9 /* TwelveViewController.h */,
 				F4A7AEC11F41A6CE0022D5F9 /* TwelveViewController.m */,
+				F4A7AEBE1F41A6CE0022D5F9 /* TwelveMPPlayerViewController.h */,
+				F4A7AEBF1F41A6CE0022D5F9 /* TwelveMPPlayerViewController.m */,
+				F4A7AEBC1F41A6CE0022D5F9 /* TwelveAVPlayerViewController.h */,
+				F4A7AEBD1F41A6CE0022D5F9 /* TwelveAVPlayerViewController.m */,
+				F488164C1F44276100C15F3D /* TwelveStudyViewController.h */,
+				F488164D1F44276100C15F3D /* TwelveStudyViewController.m */,
 			);
 			path = "12---framework封装视频";
 			sourceTree = "<group>";
@@ -477,11 +506,11 @@
 		F4A7AEEE1F41A6CE0022D5F9 /* 8---自己封装的类 */ = {
 			isa = PBXGroup;
 			children = (
+				F4A7AF051F41A6CE0022D5F9 /* EightViewController.h */,
+				F4A7AF061F41A6CE0022D5F9 /* EightViewController.m */,
 				F4A7AEEF1F41A6CE0022D5F9 /* 1---悬浮窗 */,
 				F4A7AEFB1F41A6CE0022D5F9 /* 2---头部滚动视图 */,
 				F4A7AF021F41A6CE0022D5F9 /* 3---滚动视图加头部btn */,
-				F4A7AF051F41A6CE0022D5F9 /* EightViewController.h */,
-				F4A7AF061F41A6CE0022D5F9 /* EightViewController.m */,
 			);
 			path = "8---自己封装的类";
 			sourceTree = "<group>";
@@ -557,6 +586,7 @@
 				F4DE29391F050017003C53C7 /* LZW_iOS_common_questionsUITests */,
 				F4DE291E1F050016003C53C7 /* Products */,
 				F490CA381F3D98E100446EB9 /* Frameworks */,
+				E27D6AD72042CC39D8EB7D6D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -579,6 +609,7 @@
 				F4A7AE861F41A6CE0022D5F9 /* 顾泠轩笔记 */,
 				F4A7AE871F41A6CE0022D5F9 /* 红宝时笔记 */,
 				F4A7AF621F41A7070022D5F9 /* 饶皮皮笔记 */,
+				F488164F1F442C5E00C15F3D /* 所有人公用文件夹 */,
 				F4DE29451F050132003C53C7 /* New Group */,
 				F4DE29201F050016003C53C7 /* Supporting Files */,
 			);
@@ -620,9 +651,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4DE293F1F050017003C53C7 /* Build configuration list for PBXNativeTarget "LZW_iOS_common_questions" */;
 			buildPhases = (
+				5F2BF43F15CD65F156F785CA /* [CP] Check Pods Manifest.lock */,
 				F4DE29191F050016003C53C7 /* Sources */,
 				F4DE291A1F050016003C53C7 /* Frameworks */,
 				F4DE291B1F050016003C53C7 /* Resources */,
+				50311076B71FADE4F6B60488 /* [CP] Embed Pods Frameworks */,
+				1A8C05AE913666DFA2178FAF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -759,6 +793,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A8C05AE913666DFA2178FAF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LZW_iOS_common_questions/Pods-LZW_iOS_common_questions-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50311076B71FADE4F6B60488 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LZW_iOS_common_questions/Pods-LZW_iOS_common_questions-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F2BF43F15CD65F156F785CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F4DE29191F050016003C53C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -792,6 +874,7 @@
 				F4A7AF5D1F41A6CE0022D5F9 /* EightViewController.m in Sources */,
 				F4A7AF4E1F41A6CE0022D5F9 /* LZWFloatWindow.m in Sources */,
 				F4A7AF101F41A6CE0022D5F9 /* ZeroViewController.m in Sources */,
+				F488164E1F44276100C15F3D /* TwelveStudyViewController.m in Sources */,
 				F4A7AF2D1F41A6CE0022D5F9 /* TenViewController.m in Sources */,
 				F4A7AF611F41A6CE0022D5F9 /* LZWTableViewController.m in Sources */,
 				F4A7AF3C1F41A6CE0022D5F9 /* TwoPublicInfo.m in Sources */,
@@ -937,10 +1020,12 @@
 		};
 		F4DE29401F050017003C53C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E6387664DE993B60D54851E /* Pods-LZW_iOS_common_questions.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = GJ3EP6KS36;
+				GCC_PREFIX_HEADER = "LZW_iOS_common_questions/所有人公用文件夹/PrefixHeader.pch";
 				INFOPLIST_FILE = LZW_iOS_common_questions/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -953,10 +1038,12 @@
 		};
 		F4DE29411F050017003C53C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47EEF7FC411C4BB76762DDEA /* Pods-LZW_iOS_common_questions.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = GJ3EP6KS36;
+				GCC_PREFIX_HEADER = "LZW_iOS_common_questions/所有人公用文件夹/PrefixHeader.pch";
 				INFOPLIST_FILE = LZW_iOS_common_questions/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

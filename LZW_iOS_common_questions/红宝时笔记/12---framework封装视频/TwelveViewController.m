@@ -9,6 +9,7 @@
 #import "TwelveViewController.h"
 #import "TwelveMPPlayerViewController.h"
 #import "TwelveAVPlayerViewController.h"
+#import "TwelveStudyViewController.h"
 
 @interface TwelveViewController ()
 
@@ -22,9 +23,9 @@
     [super viewDidLoad];
     
     
-    NSArray *titleArr = @[@"MPMoviePlayer",@"AVPlayer"];
+    NSArray *titleArr = @[@"MPMoviePlayer",@"AVPlayer",@"视音频学习博客"];
     
-    for (int i = 0; i < 2; i++)
+    for (int i = 0; i < 3; i++)
     {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         btn.frame = CGRectMake(100, 100+i*60, 150, 40);
@@ -44,9 +45,14 @@
     {
         TwelveMPPlayerViewController *vcr = [[TwelveMPPlayerViewController alloc] init];
         [self.navigationController pushViewController:vcr animated:YES];
+    }else if(btn.tag == 221)
+    {
+        TwelveAVPlayerViewController *vcr = [[TwelveAVPlayerViewController alloc] init];
+        [self.navigationController pushViewController:vcr animated:YES];
     }else
     {
-        
+        TwelveStudyViewController *vcr = [[TwelveStudyViewController alloc] init];
+        [self.navigationController pushViewController:vcr animated:YES];
     }
 }
 

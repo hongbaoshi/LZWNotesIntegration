@@ -54,6 +54,7 @@
     [AttributedStr insertAttributedString:string atIndex:4];
     //    [AttributedStr appendAttributedString:string];
     
+    
     // 用label的attributedText属性来使用富文本
     testLabel.attributedText = AttributedStr;
     
