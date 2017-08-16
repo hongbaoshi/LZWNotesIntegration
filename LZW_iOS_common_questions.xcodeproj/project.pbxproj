@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B353985DC79B65FF2DF24C5B /* libPods-LZW_iOS_common_questions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8370B6834D8C52C24F9732FD /* libPods-LZW_iOS_common_questions.a */; };
 		F488164E1F44276100C15F3D /* TwelveStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F488164D1F44276100C15F3D /* TwelveStudyViewController.m */; };
+		F48816531F442FC700C15F3D /* GulingxuanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48816521F442FC700C15F3D /* GulingxuanViewController.m */; };
+		F48816561F442FD100C15F3D /* RaopipiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48816551F442FD100C15F3D /* RaopipiViewController.m */; };
 		F490CA3B1F3D98E200446EB9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F490CA391F3D98E200446EB9 /* AVFoundation.framework */; };
 		F490CA3C1F3D98E200446EB9 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F490CA3A1F3D98E200446EB9 /* AVKit.framework */; };
 		F4A7AF101F41A6CE0022D5F9 /* ZeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A7AE8A1F41A6CE0022D5F9 /* ZeroViewController.m */; };
@@ -119,6 +121,10 @@
 		F488164C1F44276100C15F3D /* TwelveStudyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwelveStudyViewController.h; sourceTree = "<group>"; };
 		F488164D1F44276100C15F3D /* TwelveStudyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwelveStudyViewController.m; sourceTree = "<group>"; };
 		F48816501F442C7400C15F3D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F48816511F442FC700C15F3D /* GulingxuanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GulingxuanViewController.h; sourceTree = "<group>"; };
+		F48816521F442FC700C15F3D /* GulingxuanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GulingxuanViewController.m; sourceTree = "<group>"; };
+		F48816541F442FD100C15F3D /* RaopipiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaopipiViewController.h; sourceTree = "<group>"; };
+		F48816551F442FD100C15F3D /* RaopipiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaopipiViewController.m; sourceTree = "<group>"; };
 		F490CA391F3D98E200446EB9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F490CA3A1F3D98E200446EB9 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		F4A7AE891F41A6CE0022D5F9 /* ZeroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeroViewController.h; sourceTree = "<group>"; };
@@ -305,6 +311,8 @@
 		F4A7AE861F41A6CE0022D5F9 /* 顾泠轩笔记 */ = {
 			isa = PBXGroup;
 			children = (
+				F48816511F442FC700C15F3D /* GulingxuanViewController.h */,
+				F48816521F442FC700C15F3D /* GulingxuanViewController.m */,
 			);
 			path = "顾泠轩笔记";
 			sourceTree = "<group>";
@@ -575,6 +583,8 @@
 		F4A7AF621F41A7070022D5F9 /* 饶皮皮笔记 */ = {
 			isa = PBXGroup;
 			children = (
+				F48816541F442FD100C15F3D /* RaopipiViewController.h */,
+				F48816551F442FD100C15F3D /* RaopipiViewController.m */,
 			);
 			path = "饶皮皮笔记";
 			sourceTree = "<group>";
@@ -852,6 +862,7 @@
 				F4A7AF3E1F41A6CE0022D5F9 /* ThreeViewController.m in Sources */,
 				F4DE29281F050016003C53C7 /* ViewController.m in Sources */,
 				F4A7AF5E1F41A6CE0022D5F9 /* NineViewController.m in Sources */,
+				F48816531F442FC700C15F3D /* GulingxuanViewController.m in Sources */,
 				F4A7AF111F41A6CE0022D5F9 /* OneViewController.m in Sources */,
 				F4A7AF491F41A6CE0022D5F9 /* CircleLHQView.m in Sources */,
 				F4A7AF311F41A6CE0022D5F9 /* SpringAnimationViewController.m in Sources */,
@@ -885,6 +896,7 @@
 				F4A7AF2F1F41A6CE0022D5F9 /* ElevenViewController.m in Sources */,
 				F4A7AF411F41A6CE0022D5F9 /* FourViewController.m in Sources */,
 				F4A7AF3F1F41A6CE0022D5F9 /* FourGCDTableViewShow.m in Sources */,
+				F48816561F442FD100C15F3D /* RaopipiViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
