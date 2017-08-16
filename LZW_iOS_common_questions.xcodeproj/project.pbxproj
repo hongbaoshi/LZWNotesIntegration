@@ -14,6 +14,7 @@
 		ABF379921F44353300336725 /* PPAddressController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF379911F44353300336725 /* PPAddressController.m */; };
 		ABF379951F44354300336725 /* PPFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF379941F44354300336725 /* PPFoundViewController.m */; };
 		ABF379981F44355500336725 /* PPMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF379971F44355500336725 /* PPMineController.m */; };
+		ABF379CA1F4443A400336725 /* UIImage+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF379C91F4443A400336725 /* UIImage+Category.m */; };
 		B353985DC79B65FF2DF24C5B /* libPods-LZW_iOS_common_questions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8370B6834D8C52C24F9732FD /* libPods-LZW_iOS_common_questions.a */; };
 		F488164E1F44276100C15F3D /* TwelveStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F488164D1F44276100C15F3D /* TwelveStudyViewController.m */; };
 		F48816531F442FC700C15F3D /* GulingxuanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48816521F442FC700C15F3D /* GulingxuanViewController.m */; };
@@ -139,6 +140,8 @@
 		ABF379941F44354300336725 /* PPFoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPFoundViewController.m; sourceTree = "<group>"; };
 		ABF379961F44355500336725 /* PPMineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMineController.h; sourceTree = "<group>"; };
 		ABF379971F44355500336725 /* PPMineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPMineController.m; sourceTree = "<group>"; };
+		ABF379C81F4443A400336725 /* UIImage+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Category.h"; sourceTree = "<group>"; };
+		ABF379C91F4443A400336725 /* UIImage+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Category.m"; sourceTree = "<group>"; };
 		F488164C1F44276100C15F3D /* TwelveStudyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwelveStudyViewController.h; sourceTree = "<group>"; };
 		F488164D1F44276100C15F3D /* TwelveStudyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwelveStudyViewController.m; sourceTree = "<group>"; };
 		F48816501F442C7400C15F3D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -342,6 +345,8 @@
 		ABF379861F4432A100336725 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				ABF379C81F4443A400336725 /* UIImage+Category.h */,
+				ABF379C91F4443A400336725 /* UIImage+Category.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -995,6 +1000,7 @@
 				F4A7AF381F41A6CE0022D5F9 /* TwelveMPPlayerViewController.m in Sources */,
 				F4A7AF4A1F41A6CE0022D5F9 /* SixViewController.m in Sources */,
 				ABF379821F44315400336725 /* PPBaseNavigationViewController.m in Sources */,
+				ABF379CA1F4443A400336725 /* UIImage+Category.m in Sources */,
 				F4DE29251F050016003C53C7 /* AppDelegate.m in Sources */,
 				F4A7AF3D1F41A6CE0022D5F9 /* TwoPublicMethod.m in Sources */,
 				F4A7AF5C1F41A6CE0022D5F9 /* LzwScrollView.m in Sources */,

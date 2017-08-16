@@ -7,7 +7,7 @@
 //
 
 #import "PPHomeController.h"
-
+#import "ViewController.h"
 @interface PPHomeController ()
 
 @end
@@ -16,7 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self addNavigationItemWithTitles:@[@"到上面去"] isLeft:YES target:self action:@selector(back) tags:nil];
     // Do any additional setup after loading the view.
+}
+-(void)back{
+    
+    UINavigationController * naVC=[[UINavigationController alloc]initWithRootViewController:[ViewController new]];
+    [UIApplication sharedApplication].delegate.window.rootViewController=naVC;
 }
 
 - (void)didReceiveMemoryWarning {

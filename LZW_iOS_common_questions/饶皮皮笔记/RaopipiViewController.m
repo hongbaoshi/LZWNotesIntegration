@@ -11,7 +11,6 @@
 
 @interface RaopipiViewController ()
 @property(nonatomic,strong)PPBaseTabBarViewController * tabBarVc;
-@property (nonatomic,strong)UIWindow *window;
 
 @end
 
@@ -20,9 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor=[UIColor whiteColor];
-    _window = [UIApplication sharedApplication].keyWindow;
-    _window.rootViewController=self.tabBarVc;
-    
+
+    [UIApplication sharedApplication].delegate.window.rootViewController=self.tabBarVc;
     // Do any additional setup after loading the view.
 }
 
