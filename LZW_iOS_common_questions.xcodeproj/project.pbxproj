@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ABF3797F1F44314700336725 /* PPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF3797E1F44314700336725 /* PPBaseViewController.m */; };
+		ABF379821F44315400336725 /* PPBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF379811F44315400336725 /* PPBaseNavigationViewController.m */; };
+		ABF379851F44316100336725 /* PPBaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF379841F44316100336725 /* PPBaseTabBarViewController.m */; };
+		ABF3798F1F44352200336725 /* PPHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF3798E1F44352200336725 /* PPHomeController.m */; };
+		ABF379921F44353300336725 /* PPAddressController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF379911F44353300336725 /* PPAddressController.m */; };
+		ABF379951F44354300336725 /* PPFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF379941F44354300336725 /* PPFoundViewController.m */; };
+		ABF379981F44355500336725 /* PPMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF379971F44355500336725 /* PPMineController.m */; };
 		B353985DC79B65FF2DF24C5B /* libPods-LZW_iOS_common_questions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8370B6834D8C52C24F9732FD /* libPods-LZW_iOS_common_questions.a */; };
 		F488164E1F44276100C15F3D /* TwelveStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F488164D1F44276100C15F3D /* TwelveStudyViewController.m */; };
 		F48816531F442FC700C15F3D /* GulingxuanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48816521F442FC700C15F3D /* GulingxuanViewController.m */; };
@@ -118,6 +125,20 @@
 		47EEF7FC411C4BB76762DDEA /* Pods-LZW_iOS_common_questions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZW_iOS_common_questions.release.xcconfig"; path = "Pods/Target Support Files/Pods-LZW_iOS_common_questions/Pods-LZW_iOS_common_questions.release.xcconfig"; sourceTree = "<group>"; };
 		8370B6834D8C52C24F9732FD /* libPods-LZW_iOS_common_questions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LZW_iOS_common_questions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E6387664DE993B60D54851E /* Pods-LZW_iOS_common_questions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZW_iOS_common_questions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LZW_iOS_common_questions/Pods-LZW_iOS_common_questions.debug.xcconfig"; sourceTree = "<group>"; };
+		ABF3797D1F44314700336725 /* PPBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBaseViewController.h; sourceTree = "<group>"; };
+		ABF3797E1F44314700336725 /* PPBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPBaseViewController.m; sourceTree = "<group>"; };
+		ABF379801F44315400336725 /* PPBaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBaseNavigationViewController.h; sourceTree = "<group>"; };
+		ABF379811F44315400336725 /* PPBaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPBaseNavigationViewController.m; sourceTree = "<group>"; };
+		ABF379831F44316100336725 /* PPBaseTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBaseTabBarViewController.h; sourceTree = "<group>"; };
+		ABF379841F44316100336725 /* PPBaseTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPBaseTabBarViewController.m; sourceTree = "<group>"; };
+		ABF3798D1F44352200336725 /* PPHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPHomeController.h; sourceTree = "<group>"; };
+		ABF3798E1F44352200336725 /* PPHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPHomeController.m; sourceTree = "<group>"; };
+		ABF379901F44353300336725 /* PPAddressController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPAddressController.h; sourceTree = "<group>"; };
+		ABF379911F44353300336725 /* PPAddressController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPAddressController.m; sourceTree = "<group>"; };
+		ABF379931F44354300336725 /* PPFoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPFoundViewController.h; sourceTree = "<group>"; };
+		ABF379941F44354300336725 /* PPFoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPFoundViewController.m; sourceTree = "<group>"; };
+		ABF379961F44355500336725 /* PPMineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMineController.h; sourceTree = "<group>"; };
+		ABF379971F44355500336725 /* PPMineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPMineController.m; sourceTree = "<group>"; };
 		F488164C1F44276100C15F3D /* TwelveStudyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwelveStudyViewController.h; sourceTree = "<group>"; };
 		F488164D1F44276100C15F3D /* TwelveStudyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwelveStudyViewController.m; sourceTree = "<group>"; };
 		F48816501F442C7400C15F3D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -281,6 +302,104 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ABF379791F44308F00336725 /* Basse */ = {
+			isa = PBXGroup;
+			children = (
+				ABF3797A1F44310800336725 /* BaseViewController */,
+				ABF3797B1F44310800336725 /* Navigation */,
+				ABF3797C1F44310800336725 /* Tabbar */,
+			);
+			path = Basse;
+			sourceTree = "<group>";
+		};
+		ABF3797A1F44310800336725 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ABF3797D1F44314700336725 /* PPBaseViewController.h */,
+				ABF3797E1F44314700336725 /* PPBaseViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		ABF3797B1F44310800336725 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				ABF379801F44315400336725 /* PPBaseNavigationViewController.h */,
+				ABF379811F44315400336725 /* PPBaseNavigationViewController.m */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		ABF3797C1F44310800336725 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				ABF379831F44316100336725 /* PPBaseTabBarViewController.h */,
+				ABF379841F44316100336725 /* PPBaseTabBarViewController.m */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		ABF379861F4432A100336725 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		ABF379871F4432A100336725 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				ABF3798C1F4434B000336725 /* PPHome */,
+				ABF379891F4434B000336725 /* Address */,
+				ABF3798A1F4434B000336725 /* Found */,
+				ABF3798B1F4434B000336725 /* Mine */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		ABF379881F4432A100336725 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		ABF379891F4434B000336725 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				ABF379901F44353300336725 /* PPAddressController.h */,
+				ABF379911F44353300336725 /* PPAddressController.m */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		ABF3798A1F4434B000336725 /* Found */ = {
+			isa = PBXGroup;
+			children = (
+				ABF379931F44354300336725 /* PPFoundViewController.h */,
+				ABF379941F44354300336725 /* PPFoundViewController.m */,
+			);
+			path = Found;
+			sourceTree = "<group>";
+		};
+		ABF3798B1F4434B000336725 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				ABF379961F44355500336725 /* PPMineController.h */,
+				ABF379971F44355500336725 /* PPMineController.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		ABF3798C1F4434B000336725 /* PPHome */ = {
+			isa = PBXGroup;
+			children = (
+				ABF3798D1F44352200336725 /* PPHomeController.h */,
+				ABF3798E1F44352200336725 /* PPHomeController.m */,
+			);
+			path = PPHome;
+			sourceTree = "<group>";
+		};
 		E27D6AD72042CC39D8EB7D6D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -585,6 +704,10 @@
 			children = (
 				F48816541F442FD100C15F3D /* RaopipiViewController.h */,
 				F48816551F442FD100C15F3D /* RaopipiViewController.m */,
+				ABF379791F44308F00336725 /* Basse */,
+				ABF379871F4432A100336725 /* Modules */,
+				ABF379861F4432A100336725 /* Category */,
+				ABF379881F4432A100336725 /* Utils */,
 			);
 			path = "饶皮皮笔记";
 			sourceTree = "<group>";
@@ -864,12 +987,14 @@
 				F4A7AF5E1F41A6CE0022D5F9 /* NineViewController.m in Sources */,
 				F48816531F442FC700C15F3D /* GulingxuanViewController.m in Sources */,
 				F4A7AF111F41A6CE0022D5F9 /* OneViewController.m in Sources */,
+				ABF379921F44353300336725 /* PPAddressController.m in Sources */,
 				F4A7AF491F41A6CE0022D5F9 /* CircleLHQView.m in Sources */,
 				F4A7AF311F41A6CE0022D5F9 /* SpringAnimationViewController.m in Sources */,
 				F4A7AF401F41A6CE0022D5F9 /* FourOperationTableViewShow.m in Sources */,
 				F4A7AF2E1F41A6CE0022D5F9 /* ChangePropertyViewController.m in Sources */,
 				F4A7AF381F41A6CE0022D5F9 /* TwelveMPPlayerViewController.m in Sources */,
 				F4A7AF4A1F41A6CE0022D5F9 /* SixViewController.m in Sources */,
+				ABF379821F44315400336725 /* PPBaseNavigationViewController.m in Sources */,
 				F4DE29251F050016003C53C7 /* AppDelegate.m in Sources */,
 				F4A7AF3D1F41A6CE0022D5F9 /* TwoPublicMethod.m in Sources */,
 				F4A7AF5C1F41A6CE0022D5F9 /* LzwScrollView.m in Sources */,
@@ -880,6 +1005,8 @@
 				F4A7AF301F41A6CE0022D5F9 /* RotateAnimationViewController.m in Sources */,
 				F4A7AF321F41A6CE0022D5F9 /* TheoryViewController.m in Sources */,
 				F4A7AF371F41A6CE0022D5F9 /* TwelveAVPlayerViewController.m in Sources */,
+				ABF379981F44355500336725 /* PPMineController.m in Sources */,
+				ABF379851F44316100336725 /* PPBaseTabBarViewController.m in Sources */,
 				F4A7AF3B1F41A6CE0022D5F9 /* KeyChainWrapper.m in Sources */,
 				F4A7AF3A1F41A6CE0022D5F9 /* BNDReachability.m in Sources */,
 				F4A7AF5D1F41A6CE0022D5F9 /* EightViewController.m in Sources */,
@@ -893,10 +1020,13 @@
 				F4A7AF4D1F41A6CE0022D5F9 /* TestKvoViewController.m in Sources */,
 				F4A7AF5B1F41A6CE0022D5F9 /* LZWHeaderScrollView.m in Sources */,
 				F4DE29221F050016003C53C7 /* main.m in Sources */,
+				ABF379951F44354300336725 /* PPFoundViewController.m in Sources */,
+				ABF3797F1F44314700336725 /* PPBaseViewController.m in Sources */,
 				F4A7AF2F1F41A6CE0022D5F9 /* ElevenViewController.m in Sources */,
 				F4A7AF411F41A6CE0022D5F9 /* FourViewController.m in Sources */,
 				F4A7AF3F1F41A6CE0022D5F9 /* FourGCDTableViewShow.m in Sources */,
 				F48816561F442FD100C15F3D /* RaopipiViewController.m in Sources */,
+				ABF3798F1F44352200336725 /* PPHomeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,28 +1,21 @@
 //
-//  RaopipiViewController.m
+//  PPHomeController.m
 //  LZW_iOS_common_questions
 //
-//  Created by 红宝时 on 2017/8/16.
+//  Created by 饶思学 on 2017/8/16.
 //  Copyright © 2017年 红宝时. All rights reserved.
 //
 
-#import "RaopipiViewController.h"
-#import "PPBaseTabBarViewController.h"
+#import "PPHomeController.h"
 
-@interface RaopipiViewController ()
-@property(nonatomic,strong)PPBaseTabBarViewController * tabBarVc;
-@property (nonatomic,strong)UIWindow *window;
+@interface PPHomeController ()
 
 @end
 
-@implementation RaopipiViewController
+@implementation PPHomeController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor=[UIColor whiteColor];
-    _window = [UIApplication sharedApplication].keyWindow;
-    _window.rootViewController=self.tabBarVc;
-    
     // Do any additional setup after loading the view.
 }
 
@@ -30,14 +23,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
--(PPBaseTabBarViewController *)tabBarVc{
-    
-    if (!_tabBarVc) {
-        
-        _tabBarVc=[[PPBaseTabBarViewController alloc]init];
-    }
-    return _tabBarVc;
-}
+
 /*
 #pragma mark - Navigation
 
