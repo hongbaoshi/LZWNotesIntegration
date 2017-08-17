@@ -116,6 +116,7 @@
 		F490CA3C1F3D98E200446EB9 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F490CA3A1F3D98E200446EB9 /* AVKit.framework */; };
 		F4D04D961F44627F00BC293F /* LZWPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D04D951F44627F00BC293F /* LZWPersonViewController.m */; };
 		F4D04D991F44654B00BC293F /* AllPublicMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D04D981F44654B00BC293F /* AllPublicMethod.m */; };
+		F4D04D9C1F4530AA00BC293F /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D04D9B1F4530AA00BC293F /* UIView+Extension.m */; };
 		F4DE29221F050016003C53C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DE29211F050016003C53C7 /* main.m */; };
 		F4DE29251F050016003C53C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DE29241F050016003C53C7 /* AppDelegate.m */; };
 		F4DE29281F050016003C53C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DE29271F050016003C53C7 /* ViewController.m */; };
@@ -308,6 +309,8 @@
 		F4D04D951F44627F00BC293F /* LZWPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZWPersonViewController.m; sourceTree = "<group>"; };
 		F4D04D971F44654B00BC293F /* AllPublicMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllPublicMethod.h; sourceTree = "<group>"; };
 		F4D04D981F44654B00BC293F /* AllPublicMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllPublicMethod.m; sourceTree = "<group>"; };
+		F4D04D9A1F4530AA00BC293F /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		F4D04D9B1F4530AA00BC293F /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		F4DE291D1F050016003C53C7 /* LZW_iOS_common_questions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZW_iOS_common_questions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DE29211F050016003C53C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4DE29231F050016003C53C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -520,6 +523,8 @@
 			children = (
 				F48816501F442C7400C15F3D /* PrefixHeader.pch */,
 				0750F95E1F452317001D48E4 /* DefineUtils.h */,
+				F4D04D9A1F4530AA00BC293F /* UIView+Extension.h */,
+				F4D04D9B1F4530AA00BC293F /* UIView+Extension.m */,
 				F4D04D971F44654B00BC293F /* AllPublicMethod.h */,
 				F4D04D981F44654B00BC293F /* AllPublicMethod.m */,
 			);
@@ -579,9 +584,6 @@
 				F48819931F444D2400C15F3D /* LZWHomeViewController.m */,
 				F488190D1F444D2400C15F3D /* 0---状态栏 */,
 				F48819101F444D2400C15F3D /* 1---导航栏 */,
-				F48819131F444D2400C15F3D /* 10---UIImageView详解 */,
-				F48819311F444D2400C15F3D /* 11---iOS简单动画(位移、旋转、缩放、弹簧) */,
-				F488193C1F444D2400C15F3D /* 12---framework封装视频 */,
 				F48819491F444D2400C15F3D /* 2---公用类 */,
 				F48819531F444D2400C15F3D /* 3---代码截屏 */,
 				F48819561F444D2400C15F3D /* 4---多线程 */,
@@ -590,6 +592,9 @@
 				F488196E1F444D2400C15F3D /* 7---KVO简单使用 */,
 				F48819751F444D2400C15F3D /* 8---自己封装的类 */,
 				F488198E1F444D2400C15F3D /* 9---富文本的简单使用 */,
+				F48819131F444D2400C15F3D /* 10---UIImageView详解 */,
+				F48819311F444D2400C15F3D /* 11---iOS简单动画(位移、旋转、缩放、弹簧) */,
+				F488193C1F444D2400C15F3D /* 12---framework封装视频 */,
 			);
 			path = "1--Home";
 			sourceTree = "<group>";
@@ -1210,6 +1215,7 @@
 				F4DE29221F050016003C53C7 /* main.m in Sources */,
 				ABF379951F44354300336725 /* PPFoundViewController.m in Sources */,
 				ABF3797F1F44314700336725 /* PPBaseViewController.m in Sources */,
+				F4D04D9C1F4530AA00BC293F /* UIView+Extension.m in Sources */,
 				F48819B91F444D2400C15F3D /* TheoryViewController.m in Sources */,
 				F48816561F442FD100C15F3D /* RaopipiViewController.m in Sources */,
 				F48819CD1F444D2400C15F3D /* FiveWKWebViewInteraction.m in Sources */,
