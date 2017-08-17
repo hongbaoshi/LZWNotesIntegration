@@ -53,16 +53,6 @@
 #define SCW [[UIScreen mainScreen] bounds].size.width
 #define SCH [[UIScreen mainScreen] bounds].size.height
 
-// View 坐标(x,y)和宽高(width,height)
-#define WIDTH(v)                (v).frame.size.width
-#define HEIGHT(v)               (v).frame.size.height
-
-#define MidX(v)                 CGRectGetMidX((v).frame)
-#define MidY(v)                 CGRectGetMidY((v).frame)
-
-#define MaxX(v)                 CGRectGetMaxX((v).frame)
-#define MaxY(v)                 CGRectGetMaxY((v).frame)
-
 // 颜色(RGB)
 #define RGBCOLOR(r, g, b)       [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
 #define RGBACOLOR(r, g, b, a)   [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
