@@ -13,9 +13,10 @@
 #endif /* PrefixHeader_pch */
 
 
-#import "LZWSingleton.h"  //宏定义单例
-#import "AllPublicMethod.h"
-#import "DefineUtils.h"
+#import "LZWSingleton.h"        //宏定义单例
+#import "UIView+Extension.h"    //重写获取视图坐标方法
+#import "AllPublicMethod.h"     //公用方法
+#import "DefineUtils.h"         //公用宏定义
 
 
 //重写NSLog,Debug模式下打印日志和当前行数
