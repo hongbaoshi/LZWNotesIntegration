@@ -30,7 +30,7 @@
                                                       @[@"02---顾泠轩",@""]
                                                       ]];
     
-    NSLog(@"伟神流弊  伟神威武 伟神带我飞");
+    NSLog(@"伟神流弊  伟神威武 伟神带我们飞");
     
     //*** 1、添加lzwTestTableView
     _lzwTestTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
