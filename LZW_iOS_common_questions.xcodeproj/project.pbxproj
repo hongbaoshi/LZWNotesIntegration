@@ -128,6 +128,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0750F95E1F452317001D48E4 /* DefineUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefineUtils.h; sourceTree = "<group>"; };
 		47EEF7FC411C4BB76762DDEA /* Pods-LZW_iOS_common_questions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZW_iOS_common_questions.release.xcconfig"; path = "Pods/Target Support Files/Pods-LZW_iOS_common_questions/Pods-LZW_iOS_common_questions.release.xcconfig"; sourceTree = "<group>"; };
 		8370B6834D8C52C24F9732FD /* libPods-LZW_iOS_common_questions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LZW_iOS_common_questions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E6387664DE993B60D54851E /* Pods-LZW_iOS_common_questions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZW_iOS_common_questions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LZW_iOS_common_questions/Pods-LZW_iOS_common_questions.debug.xcconfig"; sourceTree = "<group>"; };
@@ -434,6 +435,7 @@
 			isa = PBXGroup;
 			children = (
 				F48816501F442C7400C15F3D /* PrefixHeader.pch */,
+				0750F95E1F452317001D48E4 /* DefineUtils.h */,
 				F4D04D971F44654B00BC293F /* AllPublicMethod.h */,
 				F4D04D981F44654B00BC293F /* AllPublicMethod.m */,
 			);
