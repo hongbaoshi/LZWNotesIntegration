@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "TwoPublicInfo.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -22,15 +21,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+
     self.title = @"iOS复习笔记";
     _titleDataArray = [NSMutableArray arrayWithArray:@[
-                                                      @[@"00---红宝时",@"LZWTableViewController"],
-                                                      @[@"01---饶皮皮",@""],
-                                                      @[@"02---顾泠轩",@""]
+                                                      @[@"00---红宝时",@"HongbaoshiViewController"],
+                                                      @[@"01---饶皮皮",@"RaopipiViewController"],
+                                                      @[@"02---顾泠轩",@"GulingxuanViewController"]
                                                       ]];
-    
-    NSLog(@"伟神流弊  伟神威武 伟神带我们飞");
+
+  NSLog(@"伟神、皮神流弊  伟神皮神威武 伟神皮神带我飞");
+
     
     //*** 1、添加lzwTestTableView
     _lzwTestTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];

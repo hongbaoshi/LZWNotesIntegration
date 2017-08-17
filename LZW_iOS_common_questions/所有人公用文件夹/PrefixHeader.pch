@@ -1,0 +1,63 @@
+//
+//  PrefixHeader.pch
+//  LZW_iOS_common_questions
+//
+//  Created by 红宝时 on 2017/8/16.
+//  Copyright © 2017年 红宝时. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#endif /* PrefixHeader_pch */
+
+
+#import "LZWSingleton.h"  //宏定义单例
+#import "AllPublicMethod.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
