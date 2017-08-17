@@ -14,13 +14,13 @@
 
 //获取系统对象
 
-#define kApplication[UIApplication sharedApplication]
+#define kApplication [UIApplication sharedApplication]
 
-#define kAppWindow[UIApplication sharedApplication].delegate.window
+#define kAppWindow [UIApplication sharedApplication].delegate.window
 
-#define kAppDelegate[AppDelegate shareAppDelegate]
+#define kAppDelegate [AppDelegate shareAppDelegate]
 
-#define kRootViewController[UIApplication sharedApplication].delegate.window.rootViewController
+#define kRootViewController [UIApplication sharedApplication].delegate.window.rootViewController
 
 //property属性快速声明
 #define PropertyString(s)@property(nonatomic,copy)NSString * s

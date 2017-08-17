@@ -7,9 +7,6 @@
 //
 
 
-#define SCW [UIScreen mainScreen].bounds.size.width
-#define SCH [UIScreen mainScreen].bounds.size.height
-
 #import "EightViewController.h"
 #import "LZWFloatWindow.h"
 #import "LZWHeaderScrollView.h"
