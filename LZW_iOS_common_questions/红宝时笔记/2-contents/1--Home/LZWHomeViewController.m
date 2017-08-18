@@ -27,7 +27,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+//    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 64, 100, 50)];
+//    view.backgroundColor = [UIColor redColor];
+//    [self.view bringSubviewToFront:view];
+//    [self.view addSubview:view];
+    
     _titleDataArray = [NSMutableArray arrayWithArray:@[
+                                                       @[@"返回初始化页面",@""],
                                                        @[@"00---状态栏操作",@"ZeroViewController"],
                                                        @[@"01---导航栏操作",@"OneViewController"],
                                                        @[@"02---公用方法(见:公用类文件夹)",@""],
@@ -107,7 +113,7 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
     }
-    cell.textLabel.text = _titleDataArray[indexPath.row][0];
+    cell.textLabel.text = _titleDataArray[indexPath.row][0];         
     return cell;
 }
 
@@ -119,6 +125,10 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (indexPath.row == 0)
+    {
+        [[AllPublicMethod sharedAllPublicMethod] backToFirstView];
+    }
 #pragma mark --- 1、根据字符串获取类名
     Class A = NSClassFromString(_titleDataArray[indexPath.row][1]);
     UIViewController *vcr = [[A alloc] init];
