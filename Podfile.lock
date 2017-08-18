@@ -14,19 +14,24 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - FMDB (2.7.2):
+    - FMDB/standard (= 2.7.2)
+  - FMDB/standard (2.7.2)
   - Masonry (1.0.1)
   - MJRefresh (3.1.12)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - FMDB
   - Masonry (~> 1.0.1)
   - MJRefresh (~> 3.1.12)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
 
-PODFILE CHECKSUM: 49c93ce7b0f358ab2dcb749fe171d7bdf47592b4
+PODFILE CHECKSUM: 986585c5497deab2cab334aa1c3ea1bd0a26a32b
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1
