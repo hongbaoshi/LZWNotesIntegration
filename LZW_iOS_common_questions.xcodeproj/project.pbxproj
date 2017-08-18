@@ -633,12 +633,12 @@
 		F48819561F444D2400C15F3D /* 4---多线程 */ = {
 			isa = PBXGroup;
 			children = (
+				F488195B1F444D2400C15F3D /* FourViewController.h */,
+				F488195C1F444D2400C15F3D /* FourViewController.m */,
 				F48819571F444D2400C15F3D /* FourGCDTableViewShow.h */,
 				F48819581F444D2400C15F3D /* FourGCDTableViewShow.m */,
 				F48819591F444D2400C15F3D /* FourOperationTableViewShow.h */,
 				F488195A1F444D2400C15F3D /* FourOperationTableViewShow.m */,
-				F488195B1F444D2400C15F3D /* FourViewController.h */,
-				F488195C1F444D2400C15F3D /* FourViewController.m */,
 				F488195D1F444D2400C15F3D /* MyViewController.h */,
 				F488195E1F444D2400C15F3D /* MyViewController.m */,
 			);
