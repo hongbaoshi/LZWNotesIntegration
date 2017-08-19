@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0750F9611F45327F001D48E4 /* SQL.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0750F9601F45327F001D48E4 /* SQL.rtf */; };
+		0750F96A1F453D01001D48E4 /* List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0750F9691F453D01001D48E4 /* List.plist */; };
+		0750F96E1F453FE8001D48E4 /* GlxBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0750F96D1F453FE8001D48E4 /* GlxBaseViewController.m */; };
+		0750F9711F454005001D48E4 /* DBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0750F9701F454005001D48E4 /* DBViewController.m */; };
+		0750F9741F4546F6001D48E4 /* GlxNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0750F9731F4546F6001D48E4 /* GlxNavigationViewController.m */; };
+		0750F9771F45481D001D48E4 /* UITabBarController+HideTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0750F9761F45481D001D48E4 /* UITabBarController+HideTabBar.m */; };
+		0750F97A1F454AC0001D48E4 /* GlxDirectoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0750F9791F454AC0001D48E4 /* GlxDirectoryViewController.m */; };
+		0750F97D1F454BFC001D48E4 /* CDUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0750F97C1F454BFC001D48E4 /* CDUIKit.m */; };
 		ABF3797F1F44314700336725 /* PPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF3797E1F44314700336725 /* PPBaseViewController.m */; };
 		ABF379821F44315400336725 /* PPBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF379811F44315400336725 /* PPBaseNavigationViewController.m */; };
 		ABF379851F44316100336725 /* PPBaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF379841F44316100336725 /* PPBaseTabBarViewController.m */; };
@@ -134,6 +142,20 @@
 
 /* Begin PBXFileReference section */
 		0750F95E1F452317001D48E4 /* DefineUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefineUtils.h; sourceTree = "<group>"; };
+		0750F9601F45327F001D48E4 /* SQL.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = SQL.rtf; sourceTree = "<group>"; };
+		0750F9691F453D01001D48E4 /* List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = List.plist; sourceTree = "<group>"; };
+		0750F96C1F453FE8001D48E4 /* GlxBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlxBaseViewController.h; sourceTree = "<group>"; };
+		0750F96D1F453FE8001D48E4 /* GlxBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlxBaseViewController.m; sourceTree = "<group>"; };
+		0750F96F1F454005001D48E4 /* DBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBViewController.h; sourceTree = "<group>"; };
+		0750F9701F454005001D48E4 /* DBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBViewController.m; sourceTree = "<group>"; };
+		0750F9721F4546F6001D48E4 /* GlxNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlxNavigationViewController.h; sourceTree = "<group>"; };
+		0750F9731F4546F6001D48E4 /* GlxNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlxNavigationViewController.m; sourceTree = "<group>"; };
+		0750F9751F45481D001D48E4 /* UITabBarController+HideTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+HideTabBar.h"; sourceTree = "<group>"; };
+		0750F9761F45481D001D48E4 /* UITabBarController+HideTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+HideTabBar.m"; sourceTree = "<group>"; };
+		0750F9781F454AC0001D48E4 /* GlxDirectoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlxDirectoryViewController.h; sourceTree = "<group>"; };
+		0750F9791F454AC0001D48E4 /* GlxDirectoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlxDirectoryViewController.m; sourceTree = "<group>"; };
+		0750F97B1F454BFC001D48E4 /* CDUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDUIKit.h; sourceTree = "<group>"; };
+		0750F97C1F454BFC001D48E4 /* CDUIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDUIKit.m; sourceTree = "<group>"; };
 		47EEF7FC411C4BB76762DDEA /* Pods-LZW_iOS_common_questions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZW_iOS_common_questions.release.xcconfig"; path = "Pods/Target Support Files/Pods-LZW_iOS_common_questions/Pods-LZW_iOS_common_questions.release.xcconfig"; sourceTree = "<group>"; };
 		8370B6834D8C52C24F9732FD /* libPods-LZW_iOS_common_questions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LZW_iOS_common_questions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E6387664DE993B60D54851E /* Pods-LZW_iOS_common_questions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZW_iOS_common_questions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LZW_iOS_common_questions/Pods-LZW_iOS_common_questions.debug.xcconfig"; sourceTree = "<group>"; };
@@ -339,6 +361,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0750F95F1F45319E001D48E4 /* 文字笔记 */ = {
+			isa = PBXGroup;
+			children = (
+				0750F9601F45327F001D48E4 /* SQL.rtf */,
+			);
+			path = "文字笔记";
+			sourceTree = "<group>";
+		};
+		0750F9621F453AE6001D48E4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0750F97B1F454BFC001D48E4 /* CDUIKit.h */,
+				0750F97C1F454BFC001D48E4 /* CDUIKit.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0750F9631F453AFC001D48E4 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0750F9751F45481D001D48E4 /* UITabBarController+HideTabBar.h */,
+				0750F9761F45481D001D48E4 /* UITabBarController+HideTabBar.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0750F9641F453B1B001D48E4 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				0750F96C1F453FE8001D48E4 /* GlxBaseViewController.h */,
+				0750F96D1F453FE8001D48E4 /* GlxBaseViewController.m */,
+				0750F9721F4546F6001D48E4 /* GlxNavigationViewController.h */,
+				0750F9731F4546F6001D48E4 /* GlxNavigationViewController.m */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		0750F9651F453B46001D48E4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				0750F9691F453D01001D48E4 /* List.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		0750F9661F453B60001D48E4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0750F96B1F453FC2001D48E4 /* FMDB */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0750F96B1F453FC2001D48E4 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				0750F96F1F454005001D48E4 /* DBViewController.h */,
+				0750F9701F454005001D48E4 /* DBViewController.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
 		ABF379791F44308F00336725 /* Basse */ = {
 			isa = PBXGroup;
 			children = (
@@ -657,12 +741,12 @@
 		F48819561F444D2400C15F3D /* 4---多线程 */ = {
 			isa = PBXGroup;
 			children = (
+				F488195B1F444D2400C15F3D /* FourViewController.h */,
+				F488195C1F444D2400C15F3D /* FourViewController.m */,
 				F48819571F444D2400C15F3D /* FourGCDTableViewShow.h */,
 				F48819581F444D2400C15F3D /* FourGCDTableViewShow.m */,
 				F48819591F444D2400C15F3D /* FourOperationTableViewShow.h */,
 				F488195A1F444D2400C15F3D /* FourOperationTableViewShow.m */,
-				F488195B1F444D2400C15F3D /* FourViewController.h */,
-				F488195C1F444D2400C15F3D /* FourViewController.m */,
 				F488195D1F444D2400C15F3D /* MyViewController.h */,
 				F488195E1F444D2400C15F3D /* MyViewController.m */,
 			);
@@ -808,8 +892,16 @@
 		F4A7AE861F41A6CE0022D5F9 /* 顾泠轩笔记 */ = {
 			isa = PBXGroup;
 			children = (
+				0750F95F1F45319E001D48E4 /* 文字笔记 */,
+				0750F9651F453B46001D48E4 /* Resource */,
+				0750F9621F453AE6001D48E4 /* Utils */,
+				0750F9631F453AFC001D48E4 /* Category */,
+				0750F9641F453B1B001D48E4 /* BaseClass */,
+				0750F9661F453B60001D48E4 /* Modules */,
 				F48816511F442FC700C15F3D /* GulingxuanViewController.h */,
 				F48816521F442FC700C15F3D /* GulingxuanViewController.m */,
+				0750F9781F454AC0001D48E4 /* GlxDirectoryViewController.h */,
+				0750F9791F454AC0001D48E4 /* GlxDirectoryViewController.m */,
 			);
 			path = "顾泠轩笔记";
 			sourceTree = "<group>";
@@ -991,6 +1083,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0750F96A1F453D01001D48E4 /* List.plist in Resources */,
+				0750F9611F45327F001D48E4 /* SQL.rtf in Resources */,
 				F48819B01F444D2400C15F3D /* 7.png in Resources */,
 				F48819D01F444D2400C15F3D /* wkIndex.html in Resources */,
 				F48819CE1F444D2400C15F3D /* FiveWKWebViewInteraction.xib in Resources */,
@@ -1096,7 +1190,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1108,8 +1202,11 @@
 			files = (
 				F48819CB1F444D2400C15F3D /* FiveViewController.m in Sources */,
 				F48819D11F444D2400C15F3D /* CircleLHQView.m in Sources */,
+				0750F9711F454005001D48E4 /* DBViewController.m in Sources */,
 				F48819C51F444D2400C15F3D /* TwoPublicMethod.m in Sources */,
+				0750F97A1F454AC0001D48E4 /* GlxDirectoryViewController.m in Sources */,
 				F48819D51F444D2400C15F3D /* TestKvoViewController.m in Sources */,
+				0750F9771F45481D001D48E4 /* UITabBarController+HideTabBar.m in Sources */,
 				F48819C21F444D2400C15F3D /* BNDReachability.m in Sources */,
 				F4D04D961F44627F00BC293F /* LZWPersonViewController.m in Sources */,
 				ABF37A3F1F456BE600336725 /* UIView+Animation.m in Sources */,
@@ -1137,6 +1234,7 @@
 				ABF379821F44315400336725 /* PPBaseNavigationViewController.m in Sources */,
 				ABF379CA1F4443A400336725 /* UIImage+Category.m in Sources */,
 				F48819E81F444D2400C15F3D /* LZWHomeViewController.m in Sources */,
+				0750F9741F4546F6001D48E4 /* GlxNavigationViewController.m in Sources */,
 				F4DE29251F050016003C53C7 /* AppDelegate.m in Sources */,
 				ABF379981F44355500336725 /* PPMineController.m in Sources */,
 				F48819C41F444D2400C15F3D /* TwoPublicInfo.m in Sources */,
@@ -1157,12 +1255,14 @@
 				F48819E41F444D2400C15F3D /* LzwScrollView.m in Sources */,
 				F48819E61F444D2400C15F3D /* NineViewController.m in Sources */,
 				F48819E51F444D2400C15F3D /* EightViewController.m in Sources */,
+				0750F96E1F453FE8001D48E4 /* GlxBaseViewController.m in Sources */,
 				F48819C31F444D2400C15F3D /* KeyChainWrapper.m in Sources */,
 				F48819971F444D2400C15F3D /* ZeroViewController.m in Sources */,
 				F48819981F444D2400C15F3D /* OneViewController.m in Sources */,
 				F48819EF1F444E0C00C15F3D /* LZWNavigationController.m in Sources */,
 				F48819C71F444D2400C15F3D /* FourGCDTableViewShow.m in Sources */,
 				F48819E31F444D2400C15F3D /* LZWHeaderScrollView.m in Sources */,
+				0750F97D1F454BFC001D48E4 /* CDUIKit.m in Sources */,
 				F48819CA1F444D2400C15F3D /* MyViewController.m in Sources */,
 				F4D04D991F44654B00BC293F /* AllPublicMethod.m in Sources */,
 			);
