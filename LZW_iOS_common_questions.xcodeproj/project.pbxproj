@@ -15,6 +15,10 @@
 		ABF379951F44354300336725 /* PPFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF379941F44354300336725 /* PPFoundViewController.m */; };
 		ABF379981F44355500336725 /* PPMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF379971F44355500336725 /* PPMineController.m */; };
 		ABF379CA1F4443A400336725 /* UIImage+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF379C91F4443A400336725 /* UIImage+Category.m */; };
+		ABF37A3C1F456B6000336725 /* PPHomeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF37A3B1F456B6000336725 /* PPHomeButton.m */; };
+		ABF37A3F1F456BE600336725 /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF37A3E1F456BE600336725 /* UIView+Animation.m */; };
+		ABF37A421F456D3700336725 /* PPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF37A411F456D3700336725 /* PPUtils.m */; };
+		ABF37A451F456D9300336725 /* PPAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF37A441F456D9300336725 /* PPAlertController.m */; };
 		B353985DC79B65FF2DF24C5B /* libPods-LZW_iOS_common_questions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8370B6834D8C52C24F9732FD /* libPods-LZW_iOS_common_questions.a */; };
 		F48816531F442FC700C15F3D /* GulingxuanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48816521F442FC700C15F3D /* GulingxuanViewController.m */; };
 		F48816561F442FD100C15F3D /* RaopipiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48816551F442FD100C15F3D /* RaopipiViewController.m */; };
@@ -149,6 +153,16 @@
 		ABF379971F44355500336725 /* PPMineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPMineController.m; sourceTree = "<group>"; };
 		ABF379C81F4443A400336725 /* UIImage+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Category.h"; sourceTree = "<group>"; };
 		ABF379C91F4443A400336725 /* UIImage+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Category.m"; sourceTree = "<group>"; };
+		ABF37A141F45657300336725 /* RPPHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPPHeader.h; sourceTree = "<group>"; };
+		ABF37A2E1F4569B300336725 /* RPPMacroHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPPMacroHead.h; sourceTree = "<group>"; };
+		ABF37A3A1F456B6000336725 /* PPHomeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPHomeButton.h; sourceTree = "<group>"; };
+		ABF37A3B1F456B6000336725 /* PPHomeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPHomeButton.m; sourceTree = "<group>"; };
+		ABF37A3D1F456BE600336725 /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
+		ABF37A3E1F456BE600336725 /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
+		ABF37A401F456D3700336725 /* PPUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPUtils.h; sourceTree = "<group>"; };
+		ABF37A411F456D3700336725 /* PPUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPUtils.m; sourceTree = "<group>"; };
+		ABF37A431F456D9300336725 /* PPAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPAlertController.h; sourceTree = "<group>"; };
+		ABF37A441F456D9300336725 /* PPAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPAlertController.m; sourceTree = "<group>"; };
 		F48816501F442C7400C15F3D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F48816511F442FC700C15F3D /* GulingxuanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GulingxuanViewController.h; sourceTree = "<group>"; };
 		F48816521F442FC700C15F3D /* GulingxuanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GulingxuanViewController.m; sourceTree = "<group>"; };
@@ -365,8 +379,12 @@
 		ABF379861F4432A100336725 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				ABF37A3D1F456BE600336725 /* UIView+Animation.h */,
+				ABF37A3E1F456BE600336725 /* UIView+Animation.m */,
 				ABF379C81F4443A400336725 /* UIImage+Category.h */,
 				ABF379C91F4443A400336725 /* UIImage+Category.m */,
+				ABF37A3A1F456B6000336725 /* PPHomeButton.h */,
+				ABF37A3B1F456B6000336725 /* PPHomeButton.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -385,6 +403,12 @@
 		ABF379881F4432A100336725 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				ABF37A141F45657300336725 /* RPPHeader.h */,
+				ABF37A2E1F4569B300336725 /* RPPMacroHead.h */,
+				ABF37A401F456D3700336725 /* PPUtils.h */,
+				ABF37A411F456D3700336725 /* PPUtils.m */,
+				ABF37A431F456D9300336725 /* PPAlertController.h */,
+				ABF37A441F456D9300336725 /* PPAlertController.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1088,12 +1112,15 @@
 				F48819D51F444D2400C15F3D /* TestKvoViewController.m in Sources */,
 				F48819C21F444D2400C15F3D /* BNDReachability.m in Sources */,
 				F4D04D961F44627F00BC293F /* LZWPersonViewController.m in Sources */,
+				ABF37A3F1F456BE600336725 /* UIView+Animation.m in Sources */,
 				F48819D31F444D2400C15F3D /* MyModel.m in Sources */,
 				F48819B81F444D2400C15F3D /* SpringAnimationViewController.m in Sources */,
 				F48819BF1F444D2400C15F3D /* TwelveMPPlayerViewController.m in Sources */,
 				F48819CC1F444D2400C15F3D /* FiveWebViewInteraction.m in Sources */,
+				ABF37A421F456D3700336725 /* PPUtils.m in Sources */,
 				F48819C81F444D2400C15F3D /* FourOperationTableViewShow.m in Sources */,
 				F48819B71F444D2400C15F3D /* RotateAnimationViewController.m in Sources */,
+				ABF37A451F456D9300336725 /* PPAlertController.m in Sources */,
 				F48819D21F444D2400C15F3D /* SixViewController.m in Sources */,
 				F48819C11F444D2400C15F3D /* TwelveViewController.m in Sources */,
 				F48819EC1F444D9300C15F3D /* HongbaoshiViewController.m in Sources */,
@@ -1104,6 +1131,7 @@
 				F48819C01F444D2400C15F3D /* TwelveStudyViewController.m in Sources */,
 				ABF379921F44353300336725 /* PPAddressController.m in Sources */,
 				F48819961F444D2400C15F3D /* LZWBaseViewController.m in Sources */,
+				ABF37A3C1F456B6000336725 /* PPHomeButton.m in Sources */,
 				F48819B51F444D2400C15F3D /* ChangePropertyViewController.m in Sources */,
 				F48819C61F444D2400C15F3D /* ThreeViewController.m in Sources */,
 				ABF379821F44315400336725 /* PPBaseNavigationViewController.m in Sources */,

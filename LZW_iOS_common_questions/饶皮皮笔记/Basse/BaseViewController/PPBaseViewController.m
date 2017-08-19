@@ -7,7 +7,7 @@
 //
 
 #import "PPBaseViewController.h"
-#import "UIImage+Category.h"
+
 #define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
 #define RGB(r,g,b) RGBA(r,g,b,1.0f)
 @interface PPBaseViewController ()
@@ -92,8 +92,6 @@
         [btn setTitleColor:RGB(56,56,58) forState:UIControlStateSelected];
         [btn setBackgroundImage:[UIImage createImageWithColor:[UIColor clearColor]] forState:UIControlStateSelected];
         [btn setBackgroundImage:[UIImage createImageWithColor:[UIColor clearColor]] forState:UIControlStateNormal];
-#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
-#define RGB(r,g,b) RGBA(r,g,b,1.0f)
         btn.tag = [tags[i++] integerValue];
         [btn sizeToFit];
         UIBarButtonItem * item = [[UIBarButtonItem alloc] initWithCustomView:btn];
