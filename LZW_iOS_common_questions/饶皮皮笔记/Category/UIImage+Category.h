@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImage (Category)
+/*根据颜色绘制一张图片*/
 +(nullable instancetype)createImageWithColor:(nullable UIColor *)color;
 @end

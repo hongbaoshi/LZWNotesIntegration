@@ -10,6 +10,12 @@
 #define PrefixHeader_pch
 
 
+#ifdef __OBJC__
+
+#import "RPPHeader.h"
+#import "RPPMacroHead.h"
+#endif
+
 #endif /* PrefixHeader_pch */
 
 
