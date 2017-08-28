@@ -14,15 +14,24 @@
 @property(nonatomic,strong)NSMutableArray *titleArr;
 @property(nonatomic,strong)NSMutableArray *scrVcrArr;
 @property(nonatomic,assign)NSInteger lzwScrTag;
-@property(nonatomic,strong)UIButton *btn;
 
 @property(nonatomic,strong)UIScrollView *scrView;
 @property(nonatomic,assign)float scrWidth;
 @property(nonatomic,assign)float scrHeight;
 
+@property(nonatomic,strong)NSMutableArray *btnArray;   //保存头部按钮数组
+
 @end
 
 @implementation LzwScrollView
+
+- (NSMutableArray *)btnArray
+{
+    if (!_btnArray) {
+        _btnArray = [[NSMutableArray alloc] init];
+    }
+    return _btnArray;
+}
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -59,25 +68,40 @@
 #pragma mark --- 2、创建button
 -(void)creatButton
 {
-    float width = ([UIScreen mainScreen].bounds.size.width - 5*(_titleArr.count+1))/_titleArr.count;
+    float width = ([UIScreen mainScreen].bounds.size.width)/_titleArr.count;
     float height = 40.0;
     
     for (int i = 0; i<_titleArr.count; i++)
     {
-        _btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _btn.frame = CGRectMake(5+i*(width+5), 0, width, height);
-        _btn.backgroundColor = [UIColor greenColor];
-        [_btn setTitle:[_titleArr objectAtIndex:i] forState:UIControlStateNormal];
-        _btn.tag = _lzwScrTag + i;
-        [_btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
-        [self addSubview:_btn];
+        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        btn.frame = CGRectMake(i*(width), 0, width, height);
+        btn.backgroundColor = [UIColor greenColor];
+        [btn setTitle:[_titleArr objectAtIndex:i] forState:UIControlStateNormal];
+        btn.tag = _lzwScrTag + i;
+        if (i == 0)
+        {
+            btn.backgroundColor = [UIColor redColor];
+        }
+        [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+        [self.btnArray addObject:btn];
+        [self addSubview:btn];
     }
 }
 
 
--(void)btnClick:(UIButton *)btn
+-(void)btnClick:(UIButton *)sender
 {
-    _scrView.contentOffset = CGPointMake(_scrWidth*(btn.tag - _lzwScrTag + 1), 0);
+    for (UIButton *btn in self.btnArray)
+    {
+        if (btn.tag == sender.tag)
+        {
+            sender.backgroundColor = [UIColor redColor];
+        }else
+        {
+            btn.backgroundColor = [UIColor greenColor];
+        }
+    }
+    _scrView.contentOffset = CGPointMake(_scrWidth*(sender.tag - _lzwScrTag + 1), 0);
 }
 
 
@@ -97,29 +121,12 @@
     _scrView.contentOffset = CGPointMake(_scrWidth, 0);
     [self addSubview:_scrView];
     
+    
+    
     for (int i = 0; i < _scrVcrArr.count; i++)
     {
-        
-        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(_scrWidth*i, 0, _scrWidth, _scrHeight)];
-        if (i == 0)
-        {
-            view.backgroundColor = [UIColor yellowColor];
-        }
-        else if (i == 1)
-        {
-            view.backgroundColor = [UIColor redColor];
-        }
-        else if (i == 2)
-        {
-            view.backgroundColor = [UIColor greenColor];
-        }
-        else if (i == 3)
-        {
-            view.backgroundColor = [UIColor blueColor];
-        }else if(i == 4)
-        {
-            view.backgroundColor = [UIColor yellowColor];
-        }
+        Class A = NSClassFromString(_scrVcrArr[i]);
+        UIView *view = [[A alloc] initWithFrame:CGRectMake(_scrWidth*i, 0, _scrWidth, _scrHeight)];
         [_scrView addSubview:view];
     }
     

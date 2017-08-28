@@ -50,7 +50,7 @@
         };
     }else if(btn.tag == 181)
     {
-        NSArray *imgArr = @[@"https://nie.res.netease.com/r/pic/20170802/6d756c7a-1d98-4695-a11d-b7cd41d39e88"];
+        NSArray *imgArr = @[@"https://nie.res.netease.com/r/pic/20170802/6d756c7a-1d98-4695-a11d-b7cd41d39e88",@"https://nie.res.netease.com/r/pic/20170802/6d756c7a-1d98-4695-a11d-b7cd41d39e88",@"https://nie.res.netease.com/r/pic/20170802/6d756c7a-1d98-4695-a11d-b7cd41d39e88"];
         LZWHeaderScrollView *headerScrollView = [[LZWHeaderScrollView alloc] initWithFrame:CGRectMake(30, 200, SCW-60, 200) andWithImgArray:imgArr andWithScrTime:4.0 andWithStartTag:100];
         headerScrollView.block = ^(NSInteger tag){
             NSLog(@"%ld",tag);
@@ -58,8 +58,7 @@
         [self.view addSubview:headerScrollView];
     }else if (btn.tag == 182)
     {
-        LzwScrollView *lzwScr = [[LzwScrollView alloc] initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-80) andWithBtnTitleArray:@[@"第一个",@"第二个",@"第三个",@"第四个"] andWithScrollViewControlerArray:@[@"0",@"1",@"2",@"3"] withTag:830];
-        
+        LzwScrollView *lzwScr = [[LzwScrollView alloc] initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-80) andWithBtnTitleArray:@[@"第一个",@"第二个",@"第三个",@"第四个"] andWithScrollViewControlerArray:@[@"UIView",@"UIView",@"UIView",@"UIView"] withTag:830];
         [self.view addSubview:lzwScr];
     }
 }
