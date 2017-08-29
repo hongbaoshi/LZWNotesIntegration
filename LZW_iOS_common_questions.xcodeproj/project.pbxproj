@@ -134,6 +134,8 @@
 		F4DE292D1F050016003C53C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4DE292C1F050016003C53C7 /* Assets.xcassets */; };
 		F4DE29301F050016003C53C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4DE292E1F050016003C53C7 /* LaunchScreen.storyboard */; };
 		F4DE293B1F050017003C53C7 /* LZW_iOS_common_questionsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DE293A1F050017003C53C7 /* LZW_iOS_common_questionsUITests.m */; };
+		F4E30AB01F554C240077DC13 /* 1---Runtime.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F4E30AAF1F554C240077DC13 /* 1---Runtime.rtf */; };
+		F4E30AB21F554C3B0077DC13 /* RunLoop.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F4E30AB11F554C3B0077DC13 /* RunLoop.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -356,6 +358,8 @@
 		F4DE29361F050016003C53C7 /* LZW_iOS_common_questionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZW_iOS_common_questionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DE293A1F050017003C53C7 /* LZW_iOS_common_questionsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZW_iOS_common_questionsUITests.m; sourceTree = "<group>"; };
 		F4DE293C1F050017003C53C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4E30AAF1F554C240077DC13 /* 1---Runtime.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "1---Runtime.rtf"; sourceTree = "<group>"; };
+		F4E30AB11F554C3B0077DC13 /* RunLoop.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = RunLoop.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -964,6 +968,7 @@
 		F4D387F91F53F64600C7C2F9 /* runloop */ = {
 			isa = PBXGroup;
 			children = (
+				F4E30AB11F554C3B0077DC13 /* RunLoop.rtf */,
 				F4D388041F53F88500C7C2F9 /* LZWRunloopView.h */,
 				F4D388051F53F88500C7C2F9 /* LZWRunloopView.m */,
 			);
@@ -973,6 +978,7 @@
 		F4D387FA1F53F64600C7C2F9 /* runtime */ = {
 			isa = PBXGroup;
 			children = (
+				F4E30AAF1F554C240077DC13 /* 1---Runtime.rtf */,
 				F4D388011F53F87900C7C2F9 /* LZWRuntimeView.h */,
 				F4D388021F53F87900C7C2F9 /* LZWRuntimeView.m */,
 				F4D388071F53FA8100C7C2F9 /* UIButton+block.h */,
@@ -1137,6 +1143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4E30AB21F554C3B0077DC13 /* RunLoop.rtf in Resources */,
 				0750F96A1F453D01001D48E4 /* List.plist in Resources */,
 				0750F9611F45327F001D48E4 /* SQL.rtf in Resources */,
 				F48819B01F444D2400C15F3D /* 7.png in Resources */,
@@ -1170,6 +1177,7 @@
 				F48819AD1F444D2400C15F3D /* 4.png in Resources */,
 				F48819CF1F444D2400C15F3D /* index.html in Resources */,
 				F48819A91F444D2400C15F3D /* 23.png in Resources */,
+				F4E30AB01F554C240077DC13 /* 1---Runtime.rtf in Resources */,
 				F48819BD1F444D2400C15F3D /* 4444.mp4 in Resources */,
 				F4DE29301F050016003C53C7 /* LaunchScreen.storyboard in Resources */,
 				F48819991F444D2400C15F3D /* 1.png in Resources */,
