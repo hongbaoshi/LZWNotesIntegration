@@ -15,6 +15,8 @@
 		0750F9771F45481D001D48E4 /* UITabBarController+HideTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0750F9761F45481D001D48E4 /* UITabBarController+HideTabBar.m */; };
 		0750F97A1F454AC0001D48E4 /* GlxDirectoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0750F9791F454AC0001D48E4 /* GlxDirectoryViewController.m */; };
 		0750F97D1F454BFC001D48E4 /* CDUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0750F97C1F454BFC001D48E4 /* CDUIKit.m */; };
+		AB2A3BD91F4819C1001F6028 /* PPAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2A3BD81F4819C1001F6028 /* PPAddressCell.m */; };
+		AB2A3BDC1F4819DC001F6028 /* PPAddressHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2A3BDB1F4819DC001F6028 /* PPAddressHeadView.m */; };
 		ABF3797F1F44314700336725 /* PPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF3797E1F44314700336725 /* PPBaseViewController.m */; };
 		ABF379821F44315400336725 /* PPBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF379811F44315400336725 /* PPBaseNavigationViewController.m */; };
 		ABF379851F44316100336725 /* PPBaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF379841F44316100336725 /* PPBaseTabBarViewController.m */; };
@@ -159,6 +161,10 @@
 		47EEF7FC411C4BB76762DDEA /* Pods-LZW_iOS_common_questions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZW_iOS_common_questions.release.xcconfig"; path = "Pods/Target Support Files/Pods-LZW_iOS_common_questions/Pods-LZW_iOS_common_questions.release.xcconfig"; sourceTree = "<group>"; };
 		8370B6834D8C52C24F9732FD /* libPods-LZW_iOS_common_questions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LZW_iOS_common_questions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E6387664DE993B60D54851E /* Pods-LZW_iOS_common_questions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZW_iOS_common_questions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LZW_iOS_common_questions/Pods-LZW_iOS_common_questions.debug.xcconfig"; sourceTree = "<group>"; };
+		AB2A3BD71F4819C1001F6028 /* PPAddressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPAddressCell.h; sourceTree = "<group>"; };
+		AB2A3BD81F4819C1001F6028 /* PPAddressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPAddressCell.m; sourceTree = "<group>"; };
+		AB2A3BDA1F4819DC001F6028 /* PPAddressHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPAddressHeadView.h; sourceTree = "<group>"; };
+		AB2A3BDB1F4819DC001F6028 /* PPAddressHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPAddressHeadView.m; sourceTree = "<group>"; };
 		ABF3797D1F44314700336725 /* PPBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBaseViewController.h; sourceTree = "<group>"; };
 		ABF3797E1F44314700336725 /* PPBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPBaseViewController.m; sourceTree = "<group>"; };
 		ABF379801F44315400336725 /* PPBaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBaseNavigationViewController.h; sourceTree = "<group>"; };
@@ -423,6 +429,17 @@
 			path = FMDB;
 			sourceTree = "<group>";
 		};
+		AB2A3BD61F481958001F6028 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB2A3BD71F4819C1001F6028 /* PPAddressCell.h */,
+				AB2A3BD81F4819C1001F6028 /* PPAddressCell.m */,
+				AB2A3BDA1F4819DC001F6028 /* PPAddressHeadView.h */,
+				AB2A3BDB1F4819DC001F6028 /* PPAddressHeadView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		ABF379791F44308F00336725 /* Basse */ = {
 			isa = PBXGroup;
 			children = (
@@ -502,6 +519,7 @@
 			children = (
 				ABF379901F44353300336725 /* PPAddressController.h */,
 				ABF379911F44353300336725 /* PPAddressController.m */,
+				AB2A3BD61F481958001F6028 /* View */,
 			);
 			path = Address;
 			sourceTree = "<group>";
@@ -1224,6 +1242,7 @@
 				F48819B61F444D2400C15F3D /* ElevenViewController.m in Sources */,
 				F4DE29281F050016003C53C7 /* ViewController.m in Sources */,
 				F48819B41F444D2400C15F3D /* TenViewController.m in Sources */,
+				AB2A3BD91F4819C1001F6028 /* PPAddressCell.m in Sources */,
 				F48816531F442FC700C15F3D /* GulingxuanViewController.m in Sources */,
 				F48819C01F444D2400C15F3D /* TwelveStudyViewController.m in Sources */,
 				ABF379921F44353300336725 /* PPAddressController.m in Sources */,
@@ -1239,6 +1258,7 @@
 				ABF379981F44355500336725 /* PPMineController.m in Sources */,
 				F48819C41F444D2400C15F3D /* TwoPublicInfo.m in Sources */,
 				F48819BE1F444D2400C15F3D /* TwelveAVPlayerViewController.m in Sources */,
+				AB2A3BDC1F4819DC001F6028 /* PPAddressHeadView.m in Sources */,
 				ABF379851F44316100336725 /* PPBaseTabBarViewController.m in Sources */,
 				F4DE29221F050016003C53C7 /* main.m in Sources */,
 				ABF379951F44354300336725 /* PPFoundViewController.m in Sources */,

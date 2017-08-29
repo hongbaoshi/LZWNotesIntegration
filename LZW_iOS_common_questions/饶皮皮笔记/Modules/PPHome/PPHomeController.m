@@ -8,8 +8,11 @@
 
 #import "PPHomeController.h"
 #import "ViewController.h"
-@interface PPHomeController ()
 
+@interface PPHomeController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property(nonatomic,strong)UITableView * tableView;
+@property(nonatomic,strong)NSMutableArray * dataArr;
 @end
 
 @implementation PPHomeController
@@ -17,14 +20,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self addNavigationItemWithTitles:@[@"到上面去"] isLeft:YES target:self action:@selector(back) tags:nil];
+    [self creatUI];
     // Do any additional setup after loading the view.
 }
 -(void)back{
     
-//    UINavigationController * naVC=[[UINavigationController alloc]initWithRootViewController:[ViewController new]];
-//    [UIApplication sharedApplication].delegate.window.rootViewController=naVC;
-    
     [[AllPublicMethod sharedAllPublicMethod] backToFirstView];
+}
+-(void)creatUI{
+    [self.view addSubview:self.tableView];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(0);
+    }];
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 10;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return  100;
+}
+-(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell * cell=[tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class])];
+    return cell;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,6 +52,26 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+-(UITableView *)tableView
+{
+    if (!_tableView)
+    {
+        _tableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        _tableView.showsVerticalScrollIndicator = NO;
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
+    }
+    return _tableView;
+}
+-(NSMutableArray*)dataArr{
+    if (!_dataArr) {
+        _dataArr=[NSMutableArray new];
+    }
+    return _dataArr;
+}
 /*
 #pragma mark - Navigation
 
