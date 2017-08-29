@@ -123,6 +123,12 @@
 		F4D04D961F44627F00BC293F /* LZWPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D04D951F44627F00BC293F /* LZWPersonViewController.m */; };
 		F4D04D991F44654B00BC293F /* AllPublicMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D04D981F44654B00BC293F /* AllPublicMethod.m */; };
 		F4D04D9C1F4530AA00BC293F /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D04D9B1F4530AA00BC293F /* UIView+Extension.m */; };
+		F4D387F41F53EFC100C7C2F9 /* ThirteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D387F31F53EFC100C7C2F9 /* ThirteenViewController.m */; };
+		F4D388031F53F87900C7C2F9 /* LZWRuntimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D388021F53F87900C7C2F9 /* LZWRuntimeView.m */; };
+		F4D388061F53F88500C7C2F9 /* LZWRunloopView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D388051F53F88500C7C2F9 /* LZWRunloopView.m */; };
+		F4D388091F53FA8100C7C2F9 /* UIButton+block.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D388081F53FA8100C7C2F9 /* UIButton+block.m */; };
+		F4D3880E1F53FB3700C7C2F9 /* TestAddPropety.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D3880B1F53FB3700C7C2F9 /* TestAddPropety.m */; };
+		F4D3880F1F53FB3700C7C2F9 /* TestAddPropety+propety.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D3880D1F53FB3700C7C2F9 /* TestAddPropety+propety.m */; };
 		F4DE29221F050016003C53C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DE29211F050016003C53C7 /* main.m */; };
 		F4DE29251F050016003C53C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DE29241F050016003C53C7 /* AppDelegate.m */; };
 		F4DE29281F050016003C53C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DE29271F050016003C53C7 /* ViewController.m */; };
@@ -130,6 +136,8 @@
 		F4DE292D1F050016003C53C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4DE292C1F050016003C53C7 /* Assets.xcassets */; };
 		F4DE29301F050016003C53C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4DE292E1F050016003C53C7 /* LaunchScreen.storyboard */; };
 		F4DE293B1F050017003C53C7 /* LZW_iOS_common_questionsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DE293A1F050017003C53C7 /* LZW_iOS_common_questionsUITests.m */; };
+		F4E30AB01F554C240077DC13 /* 1---Runtime.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F4E30AAF1F554C240077DC13 /* 1---Runtime.rtf */; };
+		F4E30AB21F554C3B0077DC13 /* RunLoop.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F4E30AB11F554C3B0077DC13 /* RunLoop.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -331,6 +339,18 @@
 		F4D04D981F44654B00BC293F /* AllPublicMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllPublicMethod.m; sourceTree = "<group>"; };
 		F4D04D9A1F4530AA00BC293F /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		F4D04D9B1F4530AA00BC293F /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		F4D387F21F53EFC100C7C2F9 /* ThirteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirteenViewController.h; sourceTree = "<group>"; };
+		F4D387F31F53EFC100C7C2F9 /* ThirteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirteenViewController.m; sourceTree = "<group>"; };
+		F4D388011F53F87900C7C2F9 /* LZWRuntimeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZWRuntimeView.h; sourceTree = "<group>"; };
+		F4D388021F53F87900C7C2F9 /* LZWRuntimeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZWRuntimeView.m; sourceTree = "<group>"; };
+		F4D388041F53F88500C7C2F9 /* LZWRunloopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZWRunloopView.h; sourceTree = "<group>"; };
+		F4D388051F53F88500C7C2F9 /* LZWRunloopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZWRunloopView.m; sourceTree = "<group>"; };
+		F4D388071F53FA8100C7C2F9 /* UIButton+block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+block.h"; sourceTree = "<group>"; };
+		F4D388081F53FA8100C7C2F9 /* UIButton+block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+block.m"; sourceTree = "<group>"; };
+		F4D3880A1F53FB3700C7C2F9 /* TestAddPropety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAddPropety.h; sourceTree = "<group>"; };
+		F4D3880B1F53FB3700C7C2F9 /* TestAddPropety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAddPropety.m; sourceTree = "<group>"; };
+		F4D3880C1F53FB3700C7C2F9 /* TestAddPropety+propety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestAddPropety+propety.h"; sourceTree = "<group>"; };
+		F4D3880D1F53FB3700C7C2F9 /* TestAddPropety+propety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestAddPropety+propety.m"; sourceTree = "<group>"; };
 		F4DE291D1F050016003C53C7 /* LZW_iOS_common_questions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZW_iOS_common_questions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DE29211F050016003C53C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4DE29231F050016003C53C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -344,6 +364,8 @@
 		F4DE29361F050016003C53C7 /* LZW_iOS_common_questionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZW_iOS_common_questionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DE293A1F050017003C53C7 /* LZW_iOS_common_questionsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZW_iOS_common_questionsUITests.m; sourceTree = "<group>"; };
 		F4DE293C1F050017003C53C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4E30AAF1F554C240077DC13 /* 1---Runtime.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "1---Runtime.rtf"; sourceTree = "<group>"; };
+		F4E30AB11F554C3B0077DC13 /* RunLoop.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = RunLoop.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -637,6 +659,7 @@
 				F48819131F444D2400C15F3D /* 10---UIImageView详解 */,
 				F48819311F444D2400C15F3D /* 11---iOS简单动画(位移、旋转、缩放、弹簧) */,
 				F488193C1F444D2400C15F3D /* 12---framework封装视频 */,
+				F4D387F11F53EFAB00C7C2F9 /* 13---Runtime、Runloop */,
 			);
 			path = "1--Home";
 			sourceTree = "<group>";
@@ -698,10 +721,10 @@
 		F48819311F444D2400C15F3D /* 11---iOS简单动画(位移、旋转、缩放、弹簧) */ = {
 			isa = PBXGroup;
 			children = (
-				F48819321F444D2400C15F3D /* ChangePropertyViewController.h */,
-				F48819331F444D2400C15F3D /* ChangePropertyViewController.m */,
 				F48819341F444D2400C15F3D /* ElevenViewController.h */,
 				F48819351F444D2400C15F3D /* ElevenViewController.m */,
+				F48819321F444D2400C15F3D /* ChangePropertyViewController.h */,
+				F48819331F444D2400C15F3D /* ChangePropertyViewController.m */,
 				F48819361F444D2400C15F3D /* RotateAnimationViewController.h */,
 				F48819371F444D2400C15F3D /* RotateAnimationViewController.m */,
 				F48819381F444D2400C15F3D /* SpringAnimationViewController.h */,
@@ -814,11 +837,11 @@
 		F48819751F444D2400C15F3D /* 8---自己封装的类 */ = {
 			isa = PBXGroup;
 			children = (
+				F488198C1F444D2400C15F3D /* EightViewController.h */,
+				F488198D1F444D2400C15F3D /* EightViewController.m */,
 				F48819761F444D2400C15F3D /* 1---悬浮窗 */,
 				F48819821F444D2400C15F3D /* 2---头部滚动视图 */,
 				F48819891F444D2400C15F3D /* 3---滚动视图加头部btn */,
-				F488198C1F444D2400C15F3D /* EightViewController.h */,
-				F488198D1F444D2400C15F3D /* EightViewController.m */,
 			);
 			path = "8---自己封装的类";
 			sourceTree = "<group>";
@@ -947,6 +970,43 @@
 				ABF379881F4432A100336725 /* Utils */,
 			);
 			path = "饶皮皮笔记";
+			sourceTree = "<group>";
+		};
+		F4D387F11F53EFAB00C7C2F9 /* 13---Runtime、Runloop */ = {
+			isa = PBXGroup;
+			children = (
+				F4D387F21F53EFC100C7C2F9 /* ThirteenViewController.h */,
+				F4D387F31F53EFC100C7C2F9 /* ThirteenViewController.m */,
+				F4D387FA1F53F64600C7C2F9 /* runtime */,
+				F4D387F91F53F64600C7C2F9 /* runloop */,
+			);
+			path = "13---Runtime、Runloop";
+			sourceTree = "<group>";
+		};
+		F4D387F91F53F64600C7C2F9 /* runloop */ = {
+			isa = PBXGroup;
+			children = (
+				F4E30AB11F554C3B0077DC13 /* RunLoop.rtf */,
+				F4D388041F53F88500C7C2F9 /* LZWRunloopView.h */,
+				F4D388051F53F88500C7C2F9 /* LZWRunloopView.m */,
+			);
+			path = runloop;
+			sourceTree = "<group>";
+		};
+		F4D387FA1F53F64600C7C2F9 /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				F4E30AAF1F554C240077DC13 /* 1---Runtime.rtf */,
+				F4D388011F53F87900C7C2F9 /* LZWRuntimeView.h */,
+				F4D388021F53F87900C7C2F9 /* LZWRuntimeView.m */,
+				F4D388071F53FA8100C7C2F9 /* UIButton+block.h */,
+				F4D388081F53FA8100C7C2F9 /* UIButton+block.m */,
+				F4D3880A1F53FB3700C7C2F9 /* TestAddPropety.h */,
+				F4D3880B1F53FB3700C7C2F9 /* TestAddPropety.m */,
+				F4D3880C1F53FB3700C7C2F9 /* TestAddPropety+propety.h */,
+				F4D3880D1F53FB3700C7C2F9 /* TestAddPropety+propety.m */,
+			);
+			path = runtime;
 			sourceTree = "<group>";
 		};
 		F4DE29141F050016003C53C7 = {
@@ -1101,6 +1161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4E30AB21F554C3B0077DC13 /* RunLoop.rtf in Resources */,
 				0750F96A1F453D01001D48E4 /* List.plist in Resources */,
 				0750F9611F45327F001D48E4 /* SQL.rtf in Resources */,
 				F48819B01F444D2400C15F3D /* 7.png in Resources */,
@@ -1134,6 +1195,7 @@
 				F48819AD1F444D2400C15F3D /* 4.png in Resources */,
 				F48819CF1F444D2400C15F3D /* index.html in Resources */,
 				F48819A91F444D2400C15F3D /* 23.png in Resources */,
+				F4E30AB01F554C240077DC13 /* 1---Runtime.rtf in Resources */,
 				F48819BD1F444D2400C15F3D /* 4444.mp4 in Resources */,
 				F4DE29301F050016003C53C7 /* LaunchScreen.storyboard in Resources */,
 				F48819991F444D2400C15F3D /* 1.png in Resources */,
@@ -1221,8 +1283,10 @@
 				F48819CB1F444D2400C15F3D /* FiveViewController.m in Sources */,
 				F48819D11F444D2400C15F3D /* CircleLHQView.m in Sources */,
 				0750F9711F454005001D48E4 /* DBViewController.m in Sources */,
+				F4D3880E1F53FB3700C7C2F9 /* TestAddPropety.m in Sources */,
 				F48819C51F444D2400C15F3D /* TwoPublicMethod.m in Sources */,
 				0750F97A1F454AC0001D48E4 /* GlxDirectoryViewController.m in Sources */,
+				F4D387F41F53EFC100C7C2F9 /* ThirteenViewController.m in Sources */,
 				F48819D51F444D2400C15F3D /* TestKvoViewController.m in Sources */,
 				0750F9771F45481D001D48E4 /* UITabBarController+HideTabBar.m in Sources */,
 				F48819C21F444D2400C15F3D /* BNDReachability.m in Sources */,
@@ -1233,8 +1297,10 @@
 				F48819BF1F444D2400C15F3D /* TwelveMPPlayerViewController.m in Sources */,
 				F48819CC1F444D2400C15F3D /* FiveWebViewInteraction.m in Sources */,
 				ABF37A421F456D3700336725 /* PPUtils.m in Sources */,
+				F4D388031F53F87900C7C2F9 /* LZWRuntimeView.m in Sources */,
 				F48819C81F444D2400C15F3D /* FourOperationTableViewShow.m in Sources */,
 				F48819B71F444D2400C15F3D /* RotateAnimationViewController.m in Sources */,
+				F4D3880F1F53FB3700C7C2F9 /* TestAddPropety+propety.m in Sources */,
 				ABF37A451F456D9300336725 /* PPAlertController.m in Sources */,
 				F48819D21F444D2400C15F3D /* SixViewController.m in Sources */,
 				F48819C11F444D2400C15F3D /* TwelveViewController.m in Sources */,
@@ -1249,6 +1315,8 @@
 				F48819961F444D2400C15F3D /* LZWBaseViewController.m in Sources */,
 				ABF37A3C1F456B6000336725 /* PPHomeButton.m in Sources */,
 				F48819B51F444D2400C15F3D /* ChangePropertyViewController.m in Sources */,
+				F4D388091F53FA8100C7C2F9 /* UIButton+block.m in Sources */,
+				F4D388061F53F88500C7C2F9 /* LZWRunloopView.m in Sources */,
 				F48819C61F444D2400C15F3D /* ThreeViewController.m in Sources */,
 				ABF379821F44315400336725 /* PPBaseNavigationViewController.m in Sources */,
 				ABF379CA1F4443A400336725 /* UIImage+Category.m in Sources */,
@@ -1425,6 +1493,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = GJ3EP6KS36;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "LZW_iOS_common_questions/所有人公用文件夹/PrefixHeader.pch";
 				INFOPLIST_FILE = LZW_iOS_common_questions/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1443,6 +1512,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = GJ3EP6KS36;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "LZW_iOS_common_questions/所有人公用文件夹/PrefixHeader.pch";
 				INFOPLIST_FILE = LZW_iOS_common_questions/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
