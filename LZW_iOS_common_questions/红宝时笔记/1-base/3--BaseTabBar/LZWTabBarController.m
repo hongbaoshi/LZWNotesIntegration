@@ -20,7 +20,8 @@
 
 + (void)initialize
 {
-    if (self == [LZWTabBarController class]) {
+    if (self == [LZWTabBarController class])
+    {
         
         // 通过appearance统一设置所有UITabBarItem的文字属性
         NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
@@ -62,10 +63,6 @@
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 #pragma mark --UITabBarControllerDelegate
 -(void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
     if (tabBarController.selectedIndex==0) {
@@ -77,7 +74,10 @@
     }
 }
 
-
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 @end
 

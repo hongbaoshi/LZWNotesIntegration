@@ -30,6 +30,7 @@
 		ABF37A421F456D3700336725 /* PPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF37A411F456D3700336725 /* PPUtils.m */; };
 		ABF37A451F456D9300336725 /* PPAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF37A441F456D9300336725 /* PPAlertController.m */; };
 		B353985DC79B65FF2DF24C5B /* libPods-LZW_iOS_common_questions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8370B6834D8C52C24F9732FD /* libPods-LZW_iOS_common_questions.a */; };
+		F45B70331FA6CD0A00E52E8E /* FourteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B70321FA6CD0900E52E8E /* FourteenViewController.m */; };
 		F48816531F442FC700C15F3D /* GulingxuanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48816521F442FC700C15F3D /* GulingxuanViewController.m */; };
 		F48816561F442FD100C15F3D /* RaopipiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48816551F442FD100C15F3D /* RaopipiViewController.m */; };
 		F48819961F444D2400C15F3D /* LZWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48819081F444D2400C15F3D /* LZWBaseViewController.m */; };
@@ -199,6 +200,8 @@
 		ABF37A411F456D3700336725 /* PPUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPUtils.m; sourceTree = "<group>"; };
 		ABF37A431F456D9300336725 /* PPAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPAlertController.h; sourceTree = "<group>"; };
 		ABF37A441F456D9300336725 /* PPAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPAlertController.m; sourceTree = "<group>"; };
+		F45B70311FA6CD0900E52E8E /* FourteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourteenViewController.h; sourceTree = "<group>"; };
+		F45B70321FA6CD0900E52E8E /* FourteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourteenViewController.m; sourceTree = "<group>"; };
 		F48816501F442C7400C15F3D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F48816511F442FC700C15F3D /* GulingxuanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GulingxuanViewController.h; sourceTree = "<group>"; };
 		F48816521F442FC700C15F3D /* GulingxuanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GulingxuanViewController.m; sourceTree = "<group>"; };
@@ -582,6 +585,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F45B70301FA6CD0900E52E8E /* 14--- */ = {
+			isa = PBXGroup;
+			children = (
+				F45B70311FA6CD0900E52E8E /* FourteenViewController.h */,
+				F45B70321FA6CD0900E52E8E /* FourteenViewController.m */,
+			);
+			path = "14---";
+			sourceTree = "<group>";
+		};
 		F488164F1F442C5E00C15F3D /* 所有人公用文件夹 */ = {
 			isa = PBXGroup;
 			children = (
@@ -660,6 +672,7 @@
 				F48819311F444D2400C15F3D /* 11---iOS简单动画(位移、旋转、缩放、弹簧) */,
 				F488193C1F444D2400C15F3D /* 12---framework封装视频 */,
 				F4D387F11F53EFAB00C7C2F9 /* 13---Runtime、Runloop */,
+				F45B70301FA6CD0900E52E8E /* 14--- */,
 			);
 			path = "1--Home";
 			sourceTree = "<group>";
@@ -1126,7 +1139,7 @@
 				TargetAttributes = {
 					F4DE291C1F050016003C53C7 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = GJ3EP6KS36;
+						DevelopmentTeam = KHKZ8WJ659;
 						ProvisioningStyle = Manual;
 					};
 					F4DE29351F050016003C53C7 = {
@@ -1296,6 +1309,7 @@
 				F48819B81F444D2400C15F3D /* SpringAnimationViewController.m in Sources */,
 				F48819BF1F444D2400C15F3D /* TwelveMPPlayerViewController.m in Sources */,
 				F48819CC1F444D2400C15F3D /* FiveWebViewInteraction.m in Sources */,
+				F45B70331FA6CD0A00E52E8E /* FourteenViewController.m in Sources */,
 				ABF37A421F456D3700336725 /* PPUtils.m in Sources */,
 				F4D388031F53F87900C7C2F9 /* LZWRuntimeView.m in Sources */,
 				F48819C81F444D2400C15F3D /* FourOperationTableViewShow.m in Sources */,
@@ -1492,16 +1506,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = GJ3EP6KS36;
+				DEVELOPMENT_TEAM = KHKZ8WJ659;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "LZW_iOS_common_questions/所有人公用文件夹/PrefixHeader.pch";
+				HEADERMAP_USES_VFS = YES;
 				INFOPLIST_FILE = LZW_iOS_common_questions/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lzw.test.2017.7.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taifenggame.nzqk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "39849e7d-1d06-48d6-83d3-d510c39e888e";
-				PROVISIONING_PROFILE_SPECIFIER = dev_tf_test_2017_7_11;
+				PROVISIONING_PROFILE = "9dfadfcb-28b6-47ad-98e5-cf42acdf741c";
+				PROVISIONING_PROFILE_SPECIFIER = dev_taifenggame_nzqk_20170824;
 			};
 			name = Debug;
 		};
@@ -1511,16 +1526,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = GJ3EP6KS36;
+				DEVELOPMENT_TEAM = KHKZ8WJ659;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "LZW_iOS_common_questions/所有人公用文件夹/PrefixHeader.pch";
+				HEADERMAP_USES_VFS = YES;
 				INFOPLIST_FILE = LZW_iOS_common_questions/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lzw.test.2017.7.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taifenggame.nzqk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "39849e7d-1d06-48d6-83d3-d510c39e888e";
-				PROVISIONING_PROFILE_SPECIFIER = dev_tf_test_2017_7_11;
+				PROVISIONING_PROFILE = "9dfadfcb-28b6-47ad-98e5-cf42acdf741c";
+				PROVISIONING_PROFILE_SPECIFIER = dev_taifenggame_nzqk_20170824;
 			};
 			name = Release;
 		};

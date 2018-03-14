@@ -27,13 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 64, 100, 50)];
-//    view.backgroundColor = [UIColor redColor];
-//    [self.view bringSubviewToFront:view];
-//    [self.view addSubview:view];
-    
     _titleDataArray = [NSMutableArray arrayWithArray:@[
-                                                       @[@"返回初始化页面",@""],
                                                        @[@"00---状态栏操作",@"ZeroViewController"],
                                                        @[@"01---导航栏操作",@"OneViewController"],
                                                        @[@"02---公用方法(见:公用类文件夹)",@""],
@@ -48,7 +42,7 @@
                                                        @[@"11---iOS简单动画(位移、旋转、缩放、弹簧)",@"ElevenViewController"],
                                                        @[@"12---怎样封装framework视频",@"TwelveViewController"],
                                                        @[@"13---Runtime、Runloop",@"ThirteenViewController"],
-                                                       @[@"14---",@""],
+                                                       @[@"14---待定",@"FourteenViewController"],
                                                        @[@"15---",@""],
                                                        @[@"16---",@""],
                                                        @[@"17---",@""],
@@ -66,8 +60,20 @@
     
     //*** 2、添加重力感应器，用于返回首次进入页面
     [self accelerotionDataMethod];
+    
+    //*** 3、添加导航栏左边按钮返回
+    UIButton *leftbtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 80, 30)];
+    [leftbtn addTarget:self action:@selector(backHome) forControlEvents:UIControlEventTouchUpInside];
+    leftbtn.titleLabel.font= [UIFont systemFontOfSize:14];
+    [leftbtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [leftbtn setTitle:@"返回首页" forState:UIControlStateNormal];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:leftbtn];
 }
 
+-(void)backHome
+{
+    [[AllPublicMethod sharedAllPublicMethod] backToFirstView];
+}
 
 #pragma mark --- 1、设置重力感应器：用于返回进入的首页
 -(void)accelerotionDataMethod
@@ -101,7 +107,7 @@
 
 
 
-#pragma mark --- UITableViewDelegate,UITableViewDataSource
+#pragma mark --- 2、代理方法 UITableViewDelegate,UITableViewDataSource
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return _titleDataArray.count;
@@ -125,11 +131,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row == 0)
-    {
-        [[AllPublicMethod sharedAllPublicMethod] backToFirstView];
-    }
-#pragma mark --- 1、根据字符串获取类名
+    //1、根据字符串获取类名
     Class A = NSClassFromString(_titleDataArray[indexPath.row][1]);
     UIViewController *vcr = [[A alloc] init];
     [self.navigationController pushViewController:vcr animated:YES];
@@ -141,14 +143,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

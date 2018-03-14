@@ -27,17 +27,18 @@
     [self.view addSubview:_webView];
     //加载本地的html文件
     self.webView.backgroundColor = [UIColor whiteColor];
-    NSString *str = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
-    NSString *html = [NSString stringWithContentsOfFile:str encoding:NSUTF8StringEncoding error:nil];
-    [self.webView loadHTMLString:html baseURL:nil];
+//    NSString *str = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
+//    NSString *html = [NSString stringWithContentsOfFile:str encoding:NSUTF8StringEncoding error:nil];
+//    [self.webView loadHTMLString:html baseURL:nil];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://read.183read.cc/magazine/read/sanxin_618813.html"]]];
     
     
     //1、  在上面添加一个按钮，实现oc端控制h5实现弹alert方法框
-    self.btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 400, 250, 40)];
-    [self.btn setTitle:@"OC调H5方法" forState:UIControlStateNormal];
-    self.btn.backgroundColor = [UIColor colorWithRed:0.96 green:0.69 blue:0.07 alpha:1.00];
-    [self.btn addTarget:self action:@selector(showAlert) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:self.btn];
+//    self.btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 400, 250, 40)];
+//    [self.btn setTitle:@"OC调H5方法" forState:UIControlStateNormal];
+//    self.btn.backgroundColor = [UIColor colorWithRed:0.96 green:0.69 blue:0.07 alpha:1.00];
+//    [self.btn addTarget:self action:@selector(showAlert) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:self.btn];
     
 }
 
@@ -91,6 +92,13 @@
         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
         NSLog(@" data   %@   ======  ShareUrl %@",obj,dict[@"shareUrl"]);
     };
+    
+    
+    
+    //3、获取a标签的点击事件
+    
+    
+    
     
 }
 

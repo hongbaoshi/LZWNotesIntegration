@@ -32,7 +32,6 @@
     
     if (!_lzwTabBarVc)
     {
-        
         _lzwTabBarVc=[[LZWTabBarController alloc]init];
     }
     return _lzwTabBarVc;
